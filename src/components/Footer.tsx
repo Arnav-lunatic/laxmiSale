@@ -2,7 +2,6 @@
 
 import {
 	Footer,
-	FooterBrand,
 	FooterCopyright,
 	FooterDivider,
 	FooterIcon,
@@ -11,9 +10,7 @@ import {
 	FooterTitle,
 } from "flowbite-react";
 import {
-	BsDribbble,
 	BsFacebook,
-	BsGithub,
 	BsInstagram,
 	BsTwitter,
 } from "react-icons/bs";
