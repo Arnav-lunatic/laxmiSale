@@ -26,7 +26,7 @@ export function FooterComponent() {
 					<div>
 						<div className="flex gap-2">
 							<img
-								src={"/src/assets/laxmi 2-04.png"}
+								src={"/src/assets/laxmi2-04.png"}
 								className="h-16"
 								alt="Flowbite React Logo"
 							/>
