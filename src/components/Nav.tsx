@@ -1,5 +1,5 @@
 import { Sling as Hamburger } from "hamburger-react";
-import mainIcon from "/src/assets/laxmi2-02.png";
+import mainIcon from "/src/assets/laxmi 2-04.png";
 
 interface openDrawer {
 	isOpen: boolean;

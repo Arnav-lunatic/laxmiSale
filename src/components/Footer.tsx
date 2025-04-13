@@ -14,7 +14,7 @@ import {
 	BsInstagram,
 	BsTwitter,
 } from "react-icons/bs";
-import mainIcon from "/src/assets/laxmi2-02.png";
+import mainIcon from "/src/assets/laxmi 2-04.png";
 
 
 export function FooterComponent() {
