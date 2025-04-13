@@ -1,3 +1,4 @@
+
 const AboutUs = () => {
 	return (
 		<section className="bg-background py-40 px-4 md:px-8 lg:px-16">

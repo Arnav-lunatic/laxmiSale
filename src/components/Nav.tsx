@@ -1,4 +1,5 @@
 import { Sling as Hamburger } from "hamburger-react";
+import mainIcon from "/src/assets/laxmi2-02.png";
 
 interface openDrawer {
 	isOpen: boolean;
@@ -10,7 +11,7 @@ export function Nav({ isOpen, setIsOpen }: openDrawer) {
 		<div className="bg-background border border-b-primary bot flex items-center justify-between fixed top-0 right-1/2 translate-x-1/2 w-full z-50 px-4">
 			<div className="flex gap-2">
 				<img
-					src={"/src/assets/laxmi2-04.png"}
+					src={mainIcon}
 					className="h-16"
 					alt="Flowbite React Logo"
 				/>

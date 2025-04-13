@@ -14,6 +14,8 @@ import {
 	BsInstagram,
 	BsTwitter,
 } from "react-icons/bs";
+import mainIcon from "/src/assets/laxmi2-02.png";
+
 
 export function FooterComponent() {
 	return (
@@ -26,7 +28,7 @@ export function FooterComponent() {
 					<div>
 						<div className="flex gap-2">
 							<img
-								src={"/src/assets/laxmi2-04.png"}
+								src={mainIcon}
 								className="h-16"
 								alt="Flowbite React Logo"
 							/>
