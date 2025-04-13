@@ -1,0 +1,35 @@
+@import "tailwindcss";
+@plugin "flowbite-react/plugin/tailwindcss";
+@source "../.flowbite-react/class-list.json";
+
+@theme {
+	--color-background: #201315;
+	--color-primary: #ca9d55;
+	--color-secondary: #56382d;
+	--color-accent: #e76d57;
+	--color-text: #f8f3eb;
+}
+
+:root {
+	background-color: var(--color-background);
+}
+/* WebKit browsers (Chrome, Safari, Edge) */
+::-webkit-scrollbar {
+	width: 12px;
+}
+
+::-webkit-scrollbar-track {
+	background: #56382d;
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: #201315;
+	border-radius: 6px; /* Rounded corners for the thumb */
+	border: 3px solid #56382d; /* Matches the track color for a smooth edge */
+}
+
+/* Firefox */
+* {
+	scrollbar-width: thin;
+	scrollbar-color: #201315 #56382d; /* thumb color first, track color second */
+}
