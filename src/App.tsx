@@ -1,17 +1,22 @@
-import { Header, Nav, ProductPage, Menu, FooterComponent, AboutUs } from "./components";
-import { useState } from "react";
-
+import { Outlet, useLocation } from "react-router-dom";
+import { Nav, Menu, FooterComponent } from "./components";
+import { useEffect, useState } from "react";
 
 function App() {
 	const [isOpen, setIsOpen] = useState(false);
 
+	const { pathname } = useLocation();
+
+	// Automatically scrolls to top whenever pathname changes
+	useEffect(() => {
+		window.scrollTo({ top: 0, behavior: "smooth" });
+	}, [pathname]);
+
 	return (
 		<div className=" w-full max-w-[1600px] m-auto mt-20">
 			<Nav isOpen={isOpen} setIsOpen={setIsOpen} />
-			<Header />
-			<ProductPage />
+			<Outlet />
 			<Menu isOpen={isOpen} setIsOpen={setIsOpen} />
-			<AboutUs />
 			<FooterComponent />
 		</div>
 	);

@@ -1,14 +1,17 @@
+import { Button } from "flowbite-react";
 import { ProductCard } from "./Cards/ProductCard";
 import { cardContent } from "./ProductsContents";
+import { useNavigate } from "react-router-dom";
 
-export const ProductPage = () => {
+export const ProductComponent = () => {
+	const navigate = useNavigate();
 	return (
 		<div className="p-10">
 			<h1 className="text-text font-extrabold text-3xl text-center h-fit">
 				Explore Our Product!!
 			</h1>
 			<div className="grid items-end grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mt-10">
-				{cardContent.map((elem, index) => {
+				{cardContent.slice(0, 12).map((elem, index) => {
 					return (
 						<div key={index}>
 							<ProductCard
@@ -20,6 +23,12 @@ export const ProductPage = () => {
 					);
 				})}
 			</div>
+
+			<Button
+				onClick={() => navigate("/products")}
+				className="bg-accent mx-auto my-4 border border-accent hover:bg-transparent hover:scale-110 transition cursor-pointer">
+				View more
+			</Button>
 		</div>
 	);
 };

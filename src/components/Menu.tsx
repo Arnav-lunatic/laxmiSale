@@ -10,9 +10,9 @@ import {
 } from "flowbite-react";
 import { AiFillProduct } from "react-icons/ai";
 import { FaInfoCircle, FaSitemap } from "react-icons/fa";
-
 import { HiHome } from "react-icons/hi";
 import { IoCall } from "react-icons/io5";
+import { useNavigate } from "react-router-dom";
 
 interface openDrawer {
 	isOpen: boolean;
@@ -21,12 +21,13 @@ interface openDrawer {
 
 export function Menu({ isOpen, setIsOpen }: openDrawer) {
 	const handleClose = () => setIsOpen(false);
+	const navigate = useNavigate();
 
 	const menuOptions = [
-		{ title: "Home", icon: HiHome, path: "" },
-		{ title: "Products", icon: AiFillProduct, path: "" },
+		{ title: "Home", icon: HiHome, path: "/" },
+		{ title: "Products", icon: AiFillProduct, path: "/products" },
 		{ title: "Brands", icon: FaSitemap, path: "" },
-		{ title: "About us", icon: FaInfoCircle, path: "" },
+		{ title: "About us", icon: FaInfoCircle, path: "/about" },
 	];
 
 	return (
@@ -49,9 +50,12 @@ export function Menu({ isOpen, setIsOpen }: openDrawer) {
 										{menuOptions.map((elem, index) => {
 											return (
 												<SidebarItem
-													className="text-text hover:bg-secondary"
-													href={elem.path}
+													className="text-text hover:bg-secondary cursor-pointer"
 													key={index}
+													onClick={() => {
+														handleClose()
+														navigate(elem.path)
+													}}
 													icon={elem.icon}
 												>
 													{elem.title}

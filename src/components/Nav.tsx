@@ -1,5 +1,6 @@
 import { Sling as Hamburger } from "hamburger-react";
 import mainIcon from "/src/assets/laxmi 2-04.png";
+import { useNavigate } from "react-router-dom";
 
 interface openDrawer {
 	isOpen: boolean;
@@ -7,13 +8,16 @@ interface openDrawer {
 }
 
 export function Nav({ isOpen, setIsOpen }: openDrawer) {
+	const navigate = useNavigate()
 	return (
-		<div className="bg-background border border-b-primary bot flex items-center justify-between fixed top-0 right-1/2 translate-x-1/2 w-full z-50 px-4">
-			<div className="flex gap-2">
+		<div className="bg-background border border-b-secondary bot flex items-center justify-between fixed top-0 right-1/2 translate-x-1/2 w-full z-50 px-4">
+			<div
+				onClick={() => navigate("/")}
+				className="flex gap-2 cursor-pointer">
 				<img
 					src={mainIcon}
 					className="h-16"
-					alt="Flowbite React Logo"
+					alt="Logo"
 				/>
 				<span className="self-center text-xl font-extrabold text-text">
 					Laxmi Sales Corp.

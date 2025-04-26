@@ -10,6 +10,23 @@
 	--color-text: #f8f3eb;
 }
 
+@keyframes rotate45 {
+	0% {
+		transform: rotate(0deg);
+	}
+	50% {
+		transform: rotate(40deg);
+	}
+	100% {
+		transform: rotate(0deg);
+	}
+}
+
+.animate-rotate45 {
+	animation: rotate45 5s ease-in-out infinite;
+	transform-origin: bottom left;
+}
+
 :root {
 	background-color: var(--color-background);
 }
