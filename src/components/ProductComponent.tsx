@@ -6,12 +6,12 @@ import { useNavigate } from "react-router-dom";
 export const ProductComponent = () => {
 	const navigate = useNavigate();
 	return (
-		<div className="p-10">
+		<div className="p-2 md:p-8">
 			<h1 className="text-text font-extrabold text-3xl text-center h-fit">
 				Explore Our Product!!
 			</h1>
 			<div className="grid items-end grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mt-10">
-				{cardContent.slice(0, 12).map((elem, index) => {
+				{cardContent.slice(0, 8).map((elem, index) => {
 					return (
 						<div key={index}>
 							<ProductCard

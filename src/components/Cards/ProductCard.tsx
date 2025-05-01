@@ -10,7 +10,7 @@ export const ProductCard = ({
     text: string;
 }) => {
     return (
-        <Card className="max-w-sm bg-secondary border-secondary" imgAlt="not available" imgSrc={img}>
+        <Card className="w-full  bg-secondary border-secondary" imgAlt="not available" imgSrc={img}>
             <h5 className="text-2xl font-bold tracking-tight text-accent">
                 {heading}
             </h5>

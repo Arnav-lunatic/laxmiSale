@@ -9,7 +9,7 @@ import {
 	RouterProvider,
 } from "react-router-dom";
 import Home from "./components/Home.tsx";
-import { ProductPage, AboutUs } from "./components";
+import { ProductPage, AboutUs, ContactUs } from "./components";
 
 const router = createBrowserRouter(
 	createRoutesFromElements(
@@ -17,6 +17,7 @@ const router = createBrowserRouter(
 			<Route path="" element={<Home />} />
 			<Route path="products" element={<ProductPage />} />
 			<Route path="about" element={<AboutUs />} />
+			<Route path="contact-us" element={<ContactUs />} />
 		</Route>
 	)
 );

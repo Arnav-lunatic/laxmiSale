@@ -66,7 +66,10 @@ export function Menu({ isOpen, setIsOpen }: openDrawer) {
 									<SidebarItemGroup>
 										<SidebarItem
 											className="text-text hover:bg-secondary"
-											href="https://github.com/themesberg/flowbite-react/"
+											onClick={() => {
+												handleClose()
+												navigate("contact-us")
+											}}
 											icon={IoCall}
 										>
 											Contact us

@@ -1,9 +1,34 @@
+import { Carousel } from "flowbite-react";
 import founderImg from "/src/assets/founder.jpeg";
 
 export const AboutUs = () => {
 	return (
-		<section className="bg-background px-1">
-			<div className="mx-auto grid grid-cols-1 lg:grid-cols-[4fr_3fr] gap-10 items-center">
+		<section className="p-1">
+			<div className="absolute top-0 right-0 left-0 h-screen -z-1">
+				<Carousel className="invisible lg:visible" leftControl=" " rightControl=" ">
+					<img
+						src="https://images.pexels.com/photos/16788578/pexels-photo-16788578/free-photo-of-coffee-machine-with-silver-cups.jpeg"
+						alt="..."
+					/>
+					<img
+						src="https://images.pexels.com/photos/260922/pexels-photo-260922.jpeg"
+						alt="..."
+					/>
+					<img
+						src="https://images.pexels.com/photos/12303760/pexels-photo-12303760.jpeg"
+						alt="..."
+					/>
+					<img
+						src="https://images.pexels.com/photos/19296796/pexels-photo-19296796/free-photo-of-man-cut-nails-with-grinder.jpeg"
+						alt="..."
+					/>
+					<img
+						src="https://images.pexels.com/photos/6045041/pexels-photo-6045041.jpeg"
+						alt="..."
+					/>
+				</Carousel>
+			</div>
+			<div className="mx-auto border border-secondary rounded-2xl p-1 md:p-10 lg:p-20 my-20  grid grid-cols-1 lg:grid-cols-[4fr_3fr] gap-10 items-center bg-background/50 backdrop-blur-lg">
 				<div>
 					<div className="pb-8">
 						<h1 className="text-text text-5xl font-bold">
@@ -75,37 +100,86 @@ export const AboutUs = () => {
 				</div>
 			</div>
 
-			<div className="w-full bg-secondary h-[1px] my-8"></div>
-
-			<div className="mx-auto grid grid-cols-1 lg:grid-cols-[2fr_3fr] gap-10 items-center">
-				<div>
-				<div className="">
-						<div className="relative w-96 h-72">
+			<div className="mx-auto border border-secondary rounded-2xl p-1 md:p-10 lg:p-20 my-40 grid grid-cols-1 lg:grid-cols-[3fr_2fr] gap-10 items-center text-text bg-background/50 backdrop-blur-lg">
+				<div className="flex gap-2">
+					<div className="w-full">
+						<div className="relative w-full h-72">
 							<img
-								className="w-88 h-64 object-cover absolute top-0 right-0 z-10"
+								className="w-[90%] h-[90%] object-cover absolute top-0 right-0 z-10"
 								src="https://images.pexels.com/photos/355952/pexels-photo-355952.jpeg"
 								alt="..."
 							/>
-							<div className="w-88 h-64 border-8 border-primary absolute bottom-0 left-0"></div>
+							<div className="w-[90%] h-[90%] border-8 border-primary absolute bottom-0 left-0"></div>
+						</div>
+					</div>
+
+					<div className="mt-30 w-full">
+						<div className="relative w-full h-72">
+							<img
+								className="w-[90%] h-[90%] object-cover absolute top-0 right-0 z-10"
+								src="https://images.pexels.com/photos/1619576/pexels-photo-1619576.jpeg"
+								alt="..."
+							/>
+							<div className="w-[90%] h-[90%] border-8 border-primary absolute bottom-0 left-0"></div>
 						</div>
 					</div>
 				</div>
 
 				<div>
-					<p>
-						Our Mission To provide premium quality products and
-						services that bring lasting value to our customers.
-					</p>
-					<p>
-						Our Vision To be a leader in the industry by setting new
-						standards of excellence and building a future driven by
-						trust, innovation, and customer satisfaction.
-					</p>
+					<div className=" my-6 p-2 border-l-6 border-secondary">
+						<h1 className="text-xl font-bold">Our Mission</h1>
+						<p>
+							To provide premium quality products and services
+							that bring lasting value to our customers.
+						</p>
+					</div>
+
+					<div className="ml-16 my-8 p-2 border-l-6 border-secondary">
+						<h1 className="text-xl font-bold">Our Vision</h1>
+						<p>
+							To be a leader in the industry by setting new
+							standards of excellence and building a future driven
+							by trust, innovation, and customer satisfaction.
+						</p>
+					</div>
 				</div>
 			</div>
 
-			<div>
-				
+			<div className="mx-auto my-40 border border-secondary rounded-2xl p-1 md:p-10 lg:p-20 grid grid-cols-1 md:grid-cols-[1fr_3fr] gap-10 items-center text-text bg-background/50 backdrop-blur-lg">
+				<div className="w-full">
+					<div className="relative w-full p-1 lg:p-20 h-96">
+						<img
+							className="w-[90%] h-[90%] object-cover absolute top-0 right-0 z-10"
+							src={founderImg}
+							alt="..."
+						/>
+						<div className="w-[90%] h-[90%] border-8 border-primary absolute bottom-0 left-0"></div>
+					</div>
+				</div>
+				<div>
+					<div className="ml-16 p-2 border-l-6 border-secondary">
+						<p>
+							Under the visionary leadership of Mr. Vineet Kumar
+							Pandey, Laxmi Sales Corporation has grown from a
+							modest beginning into a respected and trusted name
+							in the industry. His clear vision, strong work
+							ethic, and strategic approach have helped expand the
+							company’s reach, diversify its offerings, and build
+							a loyal customer base.
+						</p>
+					</div>
+					<div className="ml-0 my-8 p-2 border-l-6 border-secondary">
+						<p>
+							Mr. Pandey’s commitment to innovation, integrity,
+							and service has been the foundation of the company’s
+							success. By embracing new technologies and
+							prioritizing customer satisfaction, he has created a
+							culture of trust and continuous improvement, earning
+							Laxmi Sales Corporation a solid reputation in the
+							market.
+						</p>
+					</div>
+				</div>
 			</div>
 		</section>
 	);

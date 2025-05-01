@@ -3,7 +3,7 @@ import { cardContent } from "./ProductsContents";
 
 export const ProductPage = () => {
 	return (
-		<div className="p-10">
+		<div className="p-2 md:p-8">
 			<h1 className="text-text font-extrabold text-3xl text-center h-fit">
 				Explore Our Product!!
 			</h1>
