@@ -3,6 +3,7 @@ export const cardContent = [
         img: "https://images.pexels.com/photos/6612601/pexels-photo-6612601.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
         heading: "Institution/ Corporate/ Bulk cooking",
         text: "Middleby Celfrost empowers you to excel in institutional and bulk cooking",
+        description: ""
     },
     {
         img: "https://images.pexels.com/photos/4099350/pexels-photo-4099350.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",

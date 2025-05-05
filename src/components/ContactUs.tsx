@@ -1,6 +1,6 @@
 import { Button, Label, Textarea, TextInput } from "flowbite-react";
 import { FaPhoneAlt } from "react-icons/fa";
-import { MdEmail } from "react-icons/md";
+import { IoMdMail } from "react-icons/io";
 import { HiMail } from "react-icons/hi";
 import { FaLocationDot } from "react-icons/fa6";
 import emailjs from "emailjs-com";
@@ -28,7 +28,7 @@ export function ContactUs() {
 			);
 	};
 	return (
-		<div className="w-full lg:w-[90%] m-auto h-[80dvh] p-2">
+		<div className="w-full lg:w-[90%] m-auto p-2">
 			<div className="flex w-full justify-between items-center flex-col md:flex-row">
 				<div className="w-full md:w-1/2 text-text max-w-xl">
 					<h1 className="text-text text-3xl lg:text-5xl font-extrabold mb-12">
@@ -49,16 +49,16 @@ export function ContactUs() {
 						<FaPhoneAlt /> Phone:
 						<a
 							href="tel:+919876543210"
-							className="text-blue-600 hover:underline"
+							className="text-primary hover:underline"
 						>
 							+91 9897258209
 						</a>
 					</p>
 					<p className=" flex items-center gap-2 text-text mb-8">
-						<MdEmail /> Email:
+						<IoMdMail /> Email:
 						<a
-							href="mailto:info@example.com"
-							className="text-blue-600 hover:underline"
+							href="mailto:laxmisalescooperation63@gamil.com"
+							className="text-primary hover:underline w-[70%] truncate"
 						>
 							laxmisalescooperation63@gamil.com
 						</a>
@@ -66,11 +66,14 @@ export function ContactUs() {
 
 					<p className=" flex items-start gap-2 text-text mb-8">
 						<FaLocationDot className="mt-1" />
-						Address:
+						Godown address:
 						<br />
-						123 Business Street,
+						Pital nagri
 						<br />
-						New Delhi, India
+						Baldevpuri choraya
+						<br />
+						Moradabad, 244001
+						<br />
 					</p>
 				</div>
 
