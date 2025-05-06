@@ -1,6 +1,7 @@
 import { Outlet, useLocation } from "react-router-dom";
 import { Nav, Menu, FooterComponent } from "./components";
 import { useEffect, useState } from "react";
+import { Analytics } from "@vercel/analytics/react"
 
 function App() {
 	const [isOpen, setIsOpen] = useState(false);
@@ -17,6 +18,7 @@ function App() {
 			<Nav isOpen={isOpen} setIsOpen={setIsOpen} />
 			<Outlet />
 			<Menu isOpen={isOpen} setIsOpen={setIsOpen} />
+			<Analytics />
 			<FooterComponent />
 		</div>
 	);
