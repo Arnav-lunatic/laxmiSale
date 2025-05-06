@@ -19,7 +19,7 @@ function ProductPageTemplate({ image, DescriptionComponent }: props) {
 	): number[] {
 		const numbers = new Set<number>();
 
-		while (numbers.size < 3) {
+		while (numbers.size < 4) {
 			const random = Math.floor(Math.random() * (max - min + 1)) + min;
 			numbers.add(random);
 		}
@@ -53,7 +53,7 @@ function ProductPageTemplate({ image, DescriptionComponent }: props) {
 				<h1 className="text-text text-4xl font-bold text-center">
 					More Products
 				</h1>
-				<div className="mt-4 flex flex-col sm:flex-row gap-4">
+				<div className="mt-4 grid items-start grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
 					<ProductCard
 						img={cardContent[randomNumbers[0]].img}
 						heading={cardContent[randomNumbers[0]].heading}
@@ -73,6 +73,12 @@ function ProductPageTemplate({ image, DescriptionComponent }: props) {
 						heading={cardContent[randomNumbers[2]].heading}
 						text={cardContent[randomNumbers[2]].text}
 						link={cardContent[randomNumbers[2]].link}
+					/>
+					<ProductCard
+						img={cardContent[randomNumbers[3]].img}
+						heading={cardContent[randomNumbers[3]].heading}
+						text={cardContent[randomNumbers[3]].text}
+						link={cardContent[randomNumbers[3]].link}
 					/>
 				</div>
 
