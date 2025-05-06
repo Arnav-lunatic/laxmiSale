@@ -7,4 +7,9 @@ import { FooterComponent } from "./Footer";
 import { AboutUs } from "./AboutUs";
 import { ContactUs } from "./ContactUs";
 
-export {Nav, Header, ProductComponent, ProductPage, Menu, FooterComponent, AboutUs, ContactUs}
+import { CommercialBhatti } from "./productPages/CommercialBhatti";
+import PizzaMakingCounter from "./productPages/PizzaMakingCounter";
+import SweetDisplayCounter from "./productPages/SweetDisplayCounter";
+import CommercialKitchenSink from "./productPages/CommercialKitchenSink";
+
+export {Nav, Header, ProductComponent, ProductPage, Menu, FooterComponent, AboutUs, ContactUs, CommercialBhatti, PizzaMakingCounter, SweetDisplayCounter, CommercialKitchenSink}

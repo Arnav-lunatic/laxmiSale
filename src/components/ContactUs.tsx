@@ -90,7 +90,7 @@ export function ContactUs() {
 						<TextInput
 							id="name"
 							name="name"
-							placeholder="Arnav Singh"
+							placeholder="Vineet Kumar pandey"
 							required
 						/>
 					</div>
@@ -109,6 +109,22 @@ export function ContactUs() {
 							rightIcon={HiMail}
 							placeholder="laxmisales@gmail.com"
 							required
+						/>
+					</div>
+
+					<div>
+						<div className="block mb-2">
+							<Label htmlFor="phone" className="text-text">
+								Your Number
+							</Label>
+						</div>
+						<TextInput
+							id="phone"
+							type="email"
+							name="phone"
+							icon={FaPhoneAlt}
+							rightIcon={FaPhoneAlt}
+							placeholder="0000000000"
 						/>
 					</div>
 

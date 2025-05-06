@@ -33,7 +33,7 @@ export function Menu({ isOpen, setIsOpen }: openDrawer) {
 	return (
 		<>
 			<Drawer
-				className="pt-20 border border-l-primary bg-background "
+				className="pt-20 border border-l-secondary bg-background "
 				open={isOpen}
 				onClose={handleClose}
 				position="right"
@@ -68,7 +68,7 @@ export function Menu({ isOpen, setIsOpen }: openDrawer) {
 											className="text-text hover:bg-secondary"
 											onClick={() => {
 												handleClose()
-												navigate("contact-us")
+												navigate("contact")
 											}}
 											icon={IoCall}
 										>
