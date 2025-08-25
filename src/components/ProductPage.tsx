@@ -8,6 +8,7 @@ export const ProductPage = () => {
 			<h1 className="text-text font-extrabold text-3xl text-center h-fit">
 				Explore Our Product!!
 			</h1>
+
 			<div className="grid items-start grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mt-10">
 				{cardContent.map((elem, index) => {
 					return (

@@ -38,8 +38,8 @@ function ProductPageTemplate({
 	}
 
 	const randomNumbers = generateThreeUniqueRandomNumbers(
-		1,
-		cardContent.length-1
+		0,
+		cardContent.length - 1
 	);
 
 	return (
@@ -52,8 +52,8 @@ function ProductPageTemplate({
 					<FaChevronLeft />
 					<span className="text-lg">Back</span>
 				</button>
-				<img className="w-3/4 lg:w-1/3" src={image} alt="..." />
-				
+				<img className="w-3/4 lg:w-2/3" src={image} alt="..." />
+
 				<div className="p-8 mr-0 lg:mr-24">
 					<div className="flex-1">
 						<h2 className="text-3xl md:text-5xl font-extrabold text-primary mb-4">
@@ -72,7 +72,7 @@ function ProductPageTemplate({
 							Key Features
 						</h3>
 						<ul className="list-disc pl-6 text-gray-700 dark:text-gray-300 space-y-1 mb-4">
-							{key_features?.map((feature, index) =>{
+							{key_features?.map((feature, index) => {
 								const key = Object.keys(feature)[0];
 								const value = feature[key];
 								return (
