@@ -9,7 +9,8 @@ import {
 	RouterProvider,
 } from "react-router-dom";
 import Home from "./components/Home.tsx";
-import { ProductPage, AboutUs, ContactUs, CommercialBhatti, PizzaMakingCounter, SweetDisplayCounter, CommercialKitchenSink } from "./components";
+import { ProductPage, AboutUs, ContactUs} from "./components";
+import EachProductPage from "./components/EachProductPage.tsx";
 
 const router = createBrowserRouter(
 	createRoutesFromElements(
@@ -17,11 +18,7 @@ const router = createBrowserRouter(
 			<Route path="" element={<Home />} />
 			<Route path="products">
 				<Route path=""  element={<ProductPage />}/>
-				<Route path="commercial-bhatti" element={<CommercialBhatti />} />
-				<Route path="pizza-making-counter" element={<PizzaMakingCounter />} />
-				<Route path="sweet-display-counter" element={<SweetDisplayCounter />} />
-				<Route path="commercial-kitchen-sink" element={<CommercialKitchenSink />} />
-				
+				<Route path=":id" element={<EachProductPage />} />
 			</Route>
 			<Route path="about" element={<AboutUs />} />
 			<Route path="contact" element={<ContactUs />} />

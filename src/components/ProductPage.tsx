@@ -1,5 +1,5 @@
 import { ProductCard } from "./Cards/ProductCard";
-import { cardContent } from "./ProductsContents";
+import { cardContent } from "./Contents/ProductsCardsContents";
 
 export const ProductPage = () => {
 

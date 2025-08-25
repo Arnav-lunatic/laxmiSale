@@ -1,16 +1,26 @@
-import React from "react";
 import { FaChevronLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
-import { cardContent } from "../ProductsContents";
-import { ProductCard } from "../Cards/ProductCard";
+import { cardContent } from "./Contents/ProductsCardsContents";
+import { ProductCard } from "./Cards/ProductCard";
 import { Button } from "flowbite-react";
 
 interface props {
 	image: string;
-	DescriptionComponent: React.FC;
+	heading: string;
+	text1?: string;
+	text2?: string;
+	key_features?: { [key: string]: string }[];
+	customer_benefits?: { [key: string]: string }[];
 }
 
-function ProductPageTemplate({ image, DescriptionComponent }: props) {
+function ProductPageTemplate({
+	image,
+	heading,
+	text1,
+	text2,
+	key_features,
+	customer_benefits,
+}: props) {
 	const navigate = useNavigate();
 
 	function generateThreeUniqueRandomNumbers(
@@ -29,7 +39,7 @@ function ProductPageTemplate({ image, DescriptionComponent }: props) {
 
 	const randomNumbers = generateThreeUniqueRandomNumbers(
 		1,
-		cardContent.length
+		cardContent.length-1
 	);
 
 	return (
@@ -43,8 +53,51 @@ function ProductPageTemplate({ image, DescriptionComponent }: props) {
 					<span className="text-lg">Back</span>
 				</button>
 				<img className="w-3/4 lg:w-1/3" src={image} alt="..." />
+				
 				<div className="p-8 mr-0 lg:mr-24">
-					<DescriptionComponent />
+					<div className="flex-1">
+						<h2 className="text-3xl md:text-5xl font-extrabold text-primary mb-4">
+							{heading}
+						</h2>
+
+						<p className="text-gray-700 dark:text-gray-300 mb-4">
+							{text1}
+						</p>
+
+						<p className="text-gray-700 dark:text-gray-300 mb-4">
+							{text2}
+						</p>
+
+						<h3 className="text-xl font-semibold text-gray-800 dark:text-gray-200 mb-2">
+							Key Features
+						</h3>
+						<ul className="list-disc pl-6 text-gray-700 dark:text-gray-300 space-y-1 mb-4">
+							{key_features?.map((feature, index) =>{
+								const key = Object.keys(feature)[0];
+								const value = feature[key];
+								return (
+									<li key={index}>
+										<strong>{key}:</strong> {value}
+									</li>
+								);
+							})}
+						</ul>
+
+						<h3 className="text-xl font-semibold text-gray-800 dark:text-gray-200 mb-2">
+							Customer Benefits
+						</h3>
+						<ul className="list-disc pl-6 text-gray-700 dark:text-gray-300 space-y-1">
+							{customer_benefits?.map((benefit, index) => {
+								const key = Object.keys(benefit)[0];
+								const value = benefit[key];
+								return (
+									<li key={index}>
+										<strong>{key}:</strong> {value}
+									</li>
+								);
+							})}
+						</ul>
+					</div>
 				</div>
 				<div className="bg-secondary/50 absolute lg:top-0 bottom-0 right-0 h-13/14 sm:h-7/8 md:h-4/5 lg:h-full w-full lg:w-5/6 -z-1"></div>
 			</div>

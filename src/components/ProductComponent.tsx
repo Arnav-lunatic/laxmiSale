@@ -1,6 +1,6 @@
 import { Button } from "flowbite-react";
 import { ProductCard } from "./Cards/ProductCard";
-import { cardContent } from "./ProductsContents";
+import { cardContent } from "./Contents/ProductsCardsContents";
 import { useNavigate } from "react-router-dom";
 
 export const ProductComponent = () => {
