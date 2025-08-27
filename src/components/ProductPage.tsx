@@ -1,5 +1,5 @@
 import { ProductCard } from "./Cards/ProductCard";
-import { cardContent } from "./Contents/ProductsCardsContents";
+import { eachProductContent } from "./Contents/EachProductContent";
 
 export const ProductPage = () => {
 
@@ -10,14 +10,14 @@ export const ProductPage = () => {
 			</h1>
 
 			<div className="grid items-start grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mt-10">
-				{cardContent.map((elem, index) => {
+				{eachProductContent.map((elem, index) => {
 					return (
 						<div
 							key={index}>
 							<ProductCard
-								img={elem.img}
+								img={elem.image}
 								heading={elem.heading}
-								text={elem.text}
+								text={elem.text1}
 								link={elem.link}
 							/>
 						</div>

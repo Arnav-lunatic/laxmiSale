@@ -1,8 +1,8 @@
 import { FaChevronLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
-import { cardContent } from "./Contents/ProductsCardsContents";
 import { ProductCard } from "./Cards/ProductCard";
 import { Button } from "flowbite-react";
+import { eachProductContent } from "./Contents/EachProductContent";
 
 interface props {
 	image: string;
@@ -39,20 +39,20 @@ function ProductPageTemplate({
 
 	const randomNumbers = generateThreeUniqueRandomNumbers(
 		0,
-		cardContent.length - 1
+		eachProductContent.length - 1
 	);
 
 	return (
-		<div className="mt-28">
-			<div className="relative flex flex-col lg:flex-row items-center mx-8 my-20">
-				<button
-					onClick={() => navigate(-1)}
-					className="cursor-pointer absolute -top-8 md:-top-4 -left-4 flex items-center gap-1 text-text"
-				>
-					<FaChevronLeft />
-					<span className="text-lg">Back</span>
-				</button>
-				<img className="w-3/4 lg:w-2/3" src={image} alt="..." />
+		<div className=" relative mt-20">
+			<button
+				onClick={() => navigate(-1)}
+				className="cursor-pointer flex items-center gap-1 text-text z-30"
+			>
+				<FaChevronLeft />
+				<span className="text-lg">Back</span>
+			</button>
+			<div className="relative flex flex-col lg:flex-row items-center mb-20 w-full lg:w-[90%] mx-auto">
+				<img className="w-3/4 lg:w-11/12 xl:w-4/5" src={image} alt="..." />
 
 				<div className="p-8 mr-0 lg:mr-24">
 					<div className="flex-1">
@@ -108,30 +108,30 @@ function ProductPageTemplate({
 				</h1>
 				<div className="mt-4 grid items-start grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
 					<ProductCard
-						img={cardContent[randomNumbers[0]].img}
-						heading={cardContent[randomNumbers[0]].heading}
-						text={cardContent[randomNumbers[0]].text}
-						link={cardContent[randomNumbers[0]].link}
+						img={eachProductContent[randomNumbers[0]].image}
+						heading={eachProductContent[randomNumbers[0]].heading}
+						text={eachProductContent[randomNumbers[0]].text1}
+						link={eachProductContent[randomNumbers[0]].link}
 					/>
 
 					<ProductCard
-						img={cardContent[randomNumbers[1]].img}
-						heading={cardContent[randomNumbers[1]].heading}
-						text={cardContent[randomNumbers[1]].text}
-						link={cardContent[randomNumbers[1]].link}
+						img={eachProductContent[randomNumbers[1]].image}
+						heading={eachProductContent[randomNumbers[1]].heading}
+						text={eachProductContent[randomNumbers[1]].text1}
+						link={eachProductContent[randomNumbers[1]].link}
 					/>
 
 					<ProductCard
-						img={cardContent[randomNumbers[2]].img}
-						heading={cardContent[randomNumbers[2]].heading}
-						text={cardContent[randomNumbers[2]].text}
-						link={cardContent[randomNumbers[2]].link}
+						img={eachProductContent[randomNumbers[2]].image}
+						heading={eachProductContent[randomNumbers[2]].heading}
+						text={eachProductContent[randomNumbers[2]].text1}
+						link={eachProductContent[randomNumbers[2]].link}
 					/>
 					<ProductCard
-						img={cardContent[randomNumbers[3]].img}
-						heading={cardContent[randomNumbers[3]].heading}
-						text={cardContent[randomNumbers[3]].text}
-						link={cardContent[randomNumbers[3]].link}
+						img={eachProductContent[randomNumbers[3]].image}
+						heading={eachProductContent[randomNumbers[3]].heading}
+						text={eachProductContent[randomNumbers[3]].text1}
+						link={eachProductContent[randomNumbers[3]].link}
 					/>
 				</div>
 
