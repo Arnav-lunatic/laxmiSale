@@ -10,7 +10,7 @@ export default function EachProductPage() {
     return (
         product && (
             <ProductPageTemplate
-                image={product.image}
+                id={product.id}
                 heading={product.heading}
                 text1={product.text1}
                 text2={product.text2}

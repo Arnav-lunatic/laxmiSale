@@ -1,6 +1,5 @@
 export const eachProductContent: Array<{
 	id: string;
-	image: string;
 	heading: string;
 	text1: string;
 	text2: string;
@@ -10,7 +9,6 @@ export const eachProductContent: Array<{
 }> = [
 	{
 		id: "commercial-bhatti",
-		image: "https://res.cloudinary.com/yt-project/image/upload/v1746475111/commercial_bhatti_zv80wd.jpg",
 		heading: "Commercial Bhatti",
 		text1: "A powerful and reliable gas stove built to handle the rigorous demands of commercial kitchens.",
 		text2: "The Commercial Bhatti is a heavy-duty cooking appliance specifically designed for sweet shops, restaurants, catering units, and other food businesses. It delivers high flame output for fast and efficient cooking of large quantities.",
@@ -58,7 +56,6 @@ export const eachProductContent: Array<{
 	},
 	{
 		id: "sweet-display-counter",
-		image: "https://res.cloudinary.com/yt-project/image/upload/v1746475112/sweet_display_counter_sgxroo.jpg",
 		heading: "Sweet Display Counter",
 		text1: "A temperature-controlled counter designed to beautifully showcase and preserve sweets in retail environments.",
 		text2: "Ideal for sweet shops and bakeries, this glass-fronted counter ensures sweets are displayed attractively while staying fresh, clean, and easily accessible for serving.",
@@ -100,7 +97,6 @@ export const eachProductContent: Array<{
 	},
 	{
 		id: "pizza-making-counter",
-		image: "https://res.cloudinary.com/yt-project/image/upload/v1746475111/pizza_making_counter_plqju5.jpg",
 		heading: "Pizza Making Counter",
 		text1: "A specialized counter designed for efficient pizza preparation and ingredient storage in commercial kitchens.",
 		text2: "The Pizza Making Counter combines a large prep surface with built-in refrigeration to keep ingredients fresh and accessible—ideal for pizzerias, cafes, and fast food outlets.",
@@ -148,7 +144,6 @@ export const eachProductContent: Array<{
 	},
 	{
 		id: "commercial-kitchen-sink",
-		image: "https://res.cloudinary.com/yt-project/image/upload/v1746475113/commercial_kitchen_sink_xxgomu.jpg",
 		heading: "Commercial Kitchen Sink",
 		text1: "A robust and spacious sink unit designed for heavy-duty cleaning and washing in commercial kitchens.",
 		text2: "Made with corrosion-resistant stainless steel, this sink is perfect for cleaning utensils, washing ingredients, and maintaining hygiene in restaurants, sweet shops, and other food establishments.",
@@ -190,327 +185,343 @@ export const eachProductContent: Array<{
 		link: "/products/commercial-kitchen-sink",
 	},
 	{
-		id: "display-counters",
-		image: "https://images.pexels.com/photos/376464/pexels-photo-376464.jpeg",
-		heading: "Display Counters",
-		text1: "Elegant and durable counters designed to showcase food items attractively while keeping them fresh.",
-		text2: "Display Counters are essential for sweet shops, bakeries, restaurants, and catering businesses. Built with sturdy materials and modern design, they provide an excellent way to present food items while maintaining hygiene and freshness.",
+		id: "pizza-oven",
+		heading: "Pizza Oven",
+		text1: "A high-performance oven designed for baking pizzas quickly and evenly.",
+		text2: "The Pizza Oven is a must-have for restaurants, cafes, and bakeries. Built for efficiency and consistent results, it delivers perfect crusts and evenly cooked pizzas in every batch.",
 		key_features: [
 			{
-				"Sturdy Construction":
-					"Made from high-quality materials for long-lasting use.",
+				"High Heat Capacity":
+					"Reaches optimal baking temperatures quickly.",
 			},
 			{
-				"Attractive Design":
-					"Sleek and modern look enhances the overall presentation.",
-			},
-			{
-				"Spacious Storage":
-					"Multiple shelves allow organized display of food items.",
-			},
-			{
-				"Temperature Control":
-					"Keeps food fresh with proper cooling or heating options.",
-			},
-			{
-				"Easy Maintenance":
-					"Smooth surfaces make cleaning quick and simple.",
-			},
-		],
-		customer_benefits: [
-			{
-				"Enhanced Presentation":
-					"Showcases sweets, bakery items, and dishes in an appealing way.",
-			},
-			{
-				"Boosts Sales":
-					"Attractive display encourages customers to buy more.",
-			},
-			{
-				"Hygienic Storage":
-					"Protects food from dust and external contamination.",
-			},
-			{
-				"Reliable Investment":
-					"A durable and practical addition for any food business.",
-			},
-		],
-		link: "/products/display-counters",
-	},
-	{
-		id: "water-cooler",
-		image: "https://res.cloudinary.com/yt-project/image/upload/v1756321387/commercial-water-cooler-500x500-1_quisp9.webp",
-		heading: "Water Cooler",
-		text1: "A durable and efficient appliance for providing chilled drinking water in commercial spaces.",
-		text2: "The Water Cooler is ideal for schools, offices, restaurants, and public places. Built with sturdy materials and advanced cooling systems, it ensures a constant supply of safe, cold water for large groups.",
-		key_features: [
-			{
-				"High Cooling Capacity":
-					"Delivers large quantities of chilled water quickly.",
-			},
-			{
-				"Durable Body":
-					"Made from corrosion-resistant materials for longevity.",
-			},
-			{
-				"Energy Efficient":
-					"Consumes less power while maintaining performance.",
-			},
-			{
-				"Hygienic Design": "Ensures safe and clean drinking water.",
-			},
-			{
-				"Easy Maintenance":
-					"Simple design allows easy cleaning and servicing.",
-			},
-		],
-		customer_benefits: [
-			{
-				Convenience:
-					"Provides chilled water on demand for staff and customers.",
-			},
-			{
-				"Health & Safety":
-					"Maintains hygienic and safe drinking water.",
-			},
-			{
-				"Cost Savings": "Reduces the need for bottled water purchases.",
-			},
-			{
-				"Reliable Performance":
-					"Built for continuous use in high-demand areas.",
-			},
-		],
-		link: "/products/water-cooler",
-	},
-	{
-		id: "khoya-machine",
-		image: "https://images.pexels.com/photos/5848129/pexels-photo-5848129.jpeg",
-		heading: "Khoya Machine",
-		text1: "A heavy-duty machine designed for preparing khoya efficiently and consistently.",
-		text2: "The Khoya Machine is an essential appliance for sweet shops and dairies. Built for durability and performance, it saves time and effort in khoya preparation, ensuring uniform texture and taste.",
-		key_features: [
-			{
-				"Robust Construction":
-					"Made with premium quality metals for long-lasting use.",
-			},
-			{
-				"Efficient Heating":
-					"Even heat distribution for perfect khoya preparation.",
-			},
-			{
-				"High Capacity":
-					"Capable of preparing large batches in one go.",
-			},
-			{
-				"Safe Operation":
-					"Equipped with safety features for secure use.",
-			},
-			{
-				"Low Maintenance":
-					"Simple design makes cleaning and upkeep easy.",
-			},
-		],
-		customer_benefits: [
-			{
-				"Time Saving":
-					"Prepares khoya quickly compared to traditional methods.",
-			},
-			{
-				"Labor Efficient":
-					"Reduces manual effort and dependence on workers.",
-			},
-			{
-				"Consistent Quality":
-					"Maintains the same taste and texture in every batch.",
-			},
-			{
-				"Profitable Investment":
-					"Boosts production and supports business growth.",
-			},
-		],
-		link: "/products/khoya-machine",
-	},
-	{
-		id: "polarizer",
-		image: "https://images.pexels.com/photos/373548/pexels-photo-373548.jpeg",
-		heading: "Polarizer",
-		text1: "A reliable cooling appliance designed to maintain comfort in hot and humid conditions.",
-		text2: "The Polarizer is built for commercial and household use, delivering efficient airflow and cooling. Ideal for restaurants, shops, and workplaces, it ensures a refreshing environment with low power consumption.",
-		key_features: [
-			{
-				"Efficient Cooling":
-					"Provides strong airflow to maintain room comfort.",
+				"Even Heat Distribution":
+					"Ensures pizzas are baked evenly throughout.",
 			},
 			{
 				"Durable Build":
-					"Made with high-quality materials for long-lasting use.",
+					"Constructed from robust materials for long-term use.",
 			},
 			{
-				"Energy Saving":
-					"Consumes less electricity while delivering powerful cooling.",
+				"Compact Design": "Fits well in both small and large kitchens.",
 			},
 			{
-				"Portable Design":
-					"Easy to move and place in different locations.",
-			},
-			{
-				"Low Maintenance":
-					"Simple to clean and maintain for daily use.",
+				"User-Friendly Controls":
+					"Simple operation for fast, efficient baking.",
 			},
 		],
 		customer_benefits: [
 			{
-				"Comfortable Environment":
-					"Keeps air cool and refreshing during hot seasons.",
+				"Consistent Quality": "Delivers perfect pizzas every time.",
 			},
 			{
-				"Cost Effective":
-					"Saves on electricity bills with energy-efficient design.",
+				"Time Saving": "Quick heating and baking reduce wait times.",
 			},
 			{
 				"Versatile Use":
-					"Suitable for shops, homes, restaurants, and offices.",
+					"Can also be used for breads, pastries, and flatbreads.",
 			},
 			{
-				"Reliable Investment": "Provides long-term cooling solutions.",
+				"Reliable Investment":
+					"Supports long-term operations in food businesses.",
 			},
 		],
-		link: "/products/polarizer",
+		link: "/products/pizza-oven",
 	},
 	{
-		id: "grinder",
-		image: "https://images.pexels.com/photos/6585758/pexels-photo-6585758.jpeg",
-		heading: "Grinder",
-		text1: "A heavy-duty grinder built for fine grinding and blending of ingredients.",
-		text2: "The Grinder is an essential tool for commercial kitchens, sweet shops, and restaurants. Designed to handle spices, grains, and other ingredients efficiently, it ensures uniform grinding for better taste and consistency.",
+		id: "electric-deep-fryer",
+		heading: "Electric Deep Fryer",
+		text1: "An efficient fryer designed for fast, safe, and consistent deep frying.",
+		text2: "The Electric Deep Fryer is ideal for restaurants, fast-food outlets, and catering units. With precise temperature controls and a sturdy build, it ensures crispy, golden results with every batch.",
 		key_features: [
 			{
-				"Powerful Motor": "High-speed performance for smooth grinding.",
+				"Precise Temperature Control":
+					"Allows accurate heat adjustment for various foods.",
 			},
 			{
-				"Sturdy Construction":
-					"Durable body made to withstand daily heavy use.",
+				"High-Capacity Tank": "Suitable for bulk frying requirements.",
 			},
 			{
-				"Multi-Purpose Use":
-					"Suitable for spices, grains, and other food items.",
+				"Durable Construction": "Built to withstand heavy daily use.",
 			},
 			{
-				"User-Friendly Operation":
-					"Easy to operate with minimal effort.",
+				"Energy Efficient":
+					"Consumes less power without compromising performance.",
 			},
 			{
-				"Low Maintenance":
-					"Simple design allows easy cleaning and care.",
+				"Safe Operation":
+					"Equipped with overheat protection and safety features.",
 			},
 		],
 		customer_benefits: [
 			{
-				"Consistent Results": "Ensures uniform grinding every time.",
+				"Consistent Frying": "Ensures uniform crispiness and taste.",
 			},
 			{
-				"Time Saving": "Speeds up food preparation in busy kitchens.",
+				"Faster Service": "Reduces cooking time during peak hours.",
+			},
+			{
+				"Cost Saving": "Energy-efficient design helps lower bills.",
+			},
+			{
+				"Reliable Equipment":
+					"Long-lasting appliance for commercial kitchens.",
+			},
+		],
+		link: "/products/electric-deep-fryer",
+	},
+	{
+		id: "manual-gas-fryer",
+		heading: "Manual Gas Fryer",
+		text1: "A sturdy gas-powered fryer for high-volume frying needs in commercial kitchens.",
+		text2: "The Manual Gas Fryer is designed for restaurants, street food vendors, and catering units. It delivers quick heating and consistent frying while being easy to operate and maintain.",
+		key_features: [
+			{
+				"Gas-Powered Efficiency":
+					"Provides rapid heating and strong flame output.",
+			},
+			{
+				"Heavy-Duty Build":
+					"Made from durable materials for long-term use.",
+			},
+			{
+				"Large Capacity": "Can fry large batches at once.",
+			},
+			{
+				"Easy to Operate": "Manual controls allow straightforward use.",
+			},
+			{
+				"Low Maintenance": "Simple design makes cleaning easy.",
+			},
+		],
+		customer_benefits: [
+			{
+				"Time Saving": "Quick frying improves service speed.",
 			},
 			{
 				"Cost Efficient":
-					"Built for long life, reducing replacement costs.",
+					"Gas-powered system reduces electricity expenses.",
 			},
 			{
-				"Versatile Utility":
-					"Supports a wide range of cooking requirements.",
+				"Reliable Output":
+					"Delivers crispy and uniform frying results.",
+			},
+			{
+				"Long-Term Durability": "Built for continuous commercial use.",
 			},
 		],
-		link: "/products/grinder",
+		link: "/products/manual-gas-fryer",
 	},
 	{
-		id: "visit-cooler",
-		image: "https://images.pexels.com/photos/373548/pexels-photo-373548.jpeg",
-		heading: "Visit Cooler",
-		text1: "A professional-grade cooler designed to keep beverages and food items chilled for display and service.",
-		text2: "Visit Coolers are widely used in restaurants, cafes, and retail shops. With transparent doors and powerful cooling, they provide an efficient way to store and display items attractively while keeping them fresh.",
+		id: "gas-range-with-oven",
+		heading: "Gas Range with Oven",
+		text1: "A versatile cooking appliance that combines a gas stove with a powerful oven.",
+		text2: "The Gas Range with Oven is perfect for restaurants, hotels, and catering units. It provides efficient flame cooking on top while the oven below ensures even baking and roasting.",
 		key_features: [
 			{
-				"Transparent Display":
-					"Glass doors allow easy product visibility.",
+				"Dual Functionality":
+					"Combines stovetop cooking with oven baking.",
+			},
+			{
+				"High Flame Control": "Adjustable burners for precise cooking.",
+			},
+			{
+				"Spacious Oven": "Large capacity oven for multiple dishes.",
+			},
+			{
+				"Durable Structure":
+					"Built with strong materials for heavy-duty use.",
+			},
+			{
+				"User-Friendly Design": "Easy operation for busy kitchens.",
+			},
+		],
+		customer_benefits: [
+			{
+				"Space Saving": "Combines two appliances into one.",
+			},
+			{
+				"Time Efficiency":
+					"Allows multitasking with cooking and baking together.",
+			},
+			{
+				"Versatile Cooking":
+					"Supports frying, boiling, baking, and roasting.",
+			},
+			{
+				"Long-Term Reliability":
+					"A strong investment for commercial kitchens.",
+			},
+		],
+		link: "/products/gas-range-with-oven",
+	},
+	{
+		id: "cotton-candy-machine",
+		heading: "Cotton Candy Machine",
+		text1: "A fun and efficient machine for preparing fresh cotton candy in seconds.",
+		text2: "The Cotton Candy Machine is popular for sweet shops, fairs, and events. Easy to operate and built with durable materials, it delivers consistent results with fluffy, colorful cotton candy.",
+		key_features: [
+			{
+				"Fast Operation":
+					"Prepares cotton candy in just a few seconds.",
+			},
+			{
+				"Durable Build": "Made for long-lasting and continuous use.",
+			},
+			{
+				"User-Friendly Controls":
+					"Simple to operate for quick results.",
+			},
+			{
+				"Compact Design": "Portable and easy to carry for events.",
+			},
+			{
+				"Low Maintenance": "Easy-to-clean structure for regular use.",
+			},
+		],
+		customer_benefits: [
+			{
+				"Attracts Customers":
+					"Creates a fun experience at shops and events.",
+			},
+			{
+				"Boosts Sales":
+					"Generates high demand in sweet shops and fairs.",
+			},
+			{
+				"Quick Service": "Delivers cotton candy instantly.",
+			},
+			{
+				"Cost Efficient": "Low running costs with high returns.",
+			},
+		],
+		link: "/products/cotton-candy-machine",
+	},
+	{
+		id: "visi-cooler",
+		heading: "Visi Cooler",
+		text1: "A transparent glass-door cooler designed for storing and displaying beverages.",
+		text2: "The Visi Cooler is widely used in restaurants, retail shops, and cafes. With its sleek design and efficient cooling system, it ensures beverages remain fresh and visible to customers.",
+		key_features: [
+			{
+				"Transparent Glass Doors":
+					"Provides clear visibility of stored items.",
 			},
 			{
 				"Fast Cooling": "Maintains consistent low temperatures.",
 			},
 			{
-				"Sturdy Build": "Designed for daily commercial usage.",
+				"Durable Structure": "Built for heavy-duty commercial use.",
 			},
 			{
-				"Adjustable Shelves": "Allows flexible arrangement of items.",
+				"Adjustable Shelves": "Flexible storage for various beverages.",
 			},
 			{
-				"Energy Saving":
-					"Efficient cooling system reduces electricity usage.",
+				"Energy Saving": "Efficient cooling reduces electricity usage.",
 			},
 		],
 		customer_benefits: [
 			{
 				"Boosts Sales":
-					"Attractive product display draws customer attention.",
+					"Attractive display encourages impulse purchases.",
 			},
 			{
-				Convenience:
-					"Keeps beverages and foods ready-to-serve at all times.",
+				Convenience: "Keeps beverages chilled and ready to serve.",
 			},
 			{
-				Durability: "Long-lasting investment for food businesses.",
+				"Reliable Cooling": "Ensures long-lasting freshness.",
 			},
 			{
-				"Operational Efficiency":
-					"Supports continuous use with minimal downtime.",
+				"Practical Investment":
+					"Durable and efficient for food businesses.",
 			},
 		],
-		link: "/products/visit-cooler",
+		link: "/products/visi-cooler",
 	},
 	{
-		id: "blender",
-		image: "https://images.pexels.com/photos/1332243/pexels-photo-1332243.jpeg",
-		heading: "Blender",
-		text1: "A powerful appliance designed for mixing, blending, and crushing ingredients with ease.",
-		text2: "The Blender is suitable for both commercial and household kitchens. With strong blades and high-speed performance, it simplifies preparation of juices, shakes, sauces, and more.",
+		id: "bread-slicer",
+		heading: "Bread Slicer",
+		text1: "A precision machine designed to slice loaves of bread quickly and evenly.",
+		text2: "The Bread Slicer is ideal for bakeries, restaurants, and hotels. With its sharp blades and sturdy build, it ensures uniform slices, saving time and effort during preparation.",
 		key_features: [
 			{
-				"High-Speed Motor":
-					"Delivers quick and smooth blending results.",
+				"Sharp Blades": "Provides clean and even slices of bread.",
 			},
 			{
-				"Durable Blades":
-					"Made from stainless steel for long-lasting sharpness.",
+				"High-Speed Operation":
+					"Slices multiple loaves in minimal time.",
 			},
 			{
-				"Multi-Function Use":
-					"Handles juices, shakes, sauces, and grinding tasks.",
+				"Durable Build":
+					"Crafted from high-quality materials for long life.",
 			},
 			{
-				"Compact Design": "Space-saving and easy to store.",
+				"Safe Design": "Equipped with safety guards for secure use.",
 			},
 			{
-				"Easy to Clean":
-					"Removable parts make cleaning simple and quick.",
+				"Easy Maintenance": "Simple to clean and maintain daily.",
 			},
 		],
 		customer_benefits: [
 			{
-				"Convenient Cooking":
-					"Speeds up preparation of multiple recipes.",
+				"Time Saving": "Speeds up bread preparation in bakeries.",
+			},
+			{
+				"Consistent Results":
+					"Delivers perfectly uniform slices every time.",
+			},
+			{
+				"Labor Efficient": "Reduces manual effort and errors.",
+			},
+			{
+				"Profitable Investment":
+					"Enhances productivity and customer satisfaction.",
+			},
+		],
+		link: "/products/bread-slicer",
+	},
+	{
+		id: "bakery-mixer",
+		heading: "Bakery Mixer",
+		text1: "A heavy-duty mixer built for kneading, whipping, and blending bakery ingredients.",
+		text2: "The Bakery Mixer is a key appliance for bakeries, sweet shops, and restaurants. With its powerful motor and durable build, it ensures efficient preparation of dough, batter, and creams.",
+		key_features: [
+			{
+				"Powerful Motor": "Handles large volumes with ease.",
+			},
+			{
+				"Multiple Attachments":
+					"Supports kneading, whipping, and mixing.",
+			},
+			{
+				"Sturdy Construction": "Made for heavy-duty commercial use.",
+			},
+			{
+				"User-Friendly Controls":
+					"Simple to operate for staff convenience.",
+			},
+			{
+				"Low Maintenance": "Easy-to-clean design for daily use.",
+			},
+		],
+		customer_benefits: [
+			{
+				"Improved Productivity":
+					"Speeds up preparation of bakery items.",
 			},
 			{
 				"Consistent Quality":
-					"Ensures smooth and uniform blending every time.",
+					"Delivers uniform results for every batch.",
 			},
 			{
-				"Versatile Utility": "Supports a wide range of kitchen needs.",
+				"Labor Saving":
+					"Reduces manual effort and dependency on workers.",
 			},
 			{
-				"Reliable Appliance":
-					"Built for daily use with minimal maintenance.",
+				"Long-Term Reliability":
+					"Durable investment for commercial kitchens.",
 			},
 		],
-		link: "/products/blender",
+		link: "/products/bakery-mixer",
 	},
 ];

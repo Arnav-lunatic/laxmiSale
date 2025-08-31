@@ -5,7 +5,7 @@ import { Button } from "flowbite-react";
 import { eachProductContent } from "./Contents/EachProductContent";
 
 interface props {
-	image: string;
+	id: string;
 	heading: string;
 	text1?: string;
 	text2?: string;
@@ -14,7 +14,7 @@ interface props {
 }
 
 function ProductPageTemplate({
-	image,
+	id,
 	heading,
 	text1,
 	text2,
@@ -52,7 +52,7 @@ function ProductPageTemplate({
 				<span className="text-lg">Back</span>
 			</button>
 			<div className="relative flex flex-col lg:flex-row items-center mb-20 w-full lg:w-[90%] mx-auto">
-				<img className="w-3/4 lg:w-11/12 xl:w-4/5" src={image} alt="..." />
+				<img className="w-3/4 lg:w-11/12 xl:w-4/5" src={`https://res.cloudinary.com/yt-project/image/upload/${id}.jpg`} alt="..." />
 
 				<div className="p-8 mr-0 lg:mr-24">
 					<div className="flex-1">
@@ -108,27 +108,27 @@ function ProductPageTemplate({
 				</h1>
 				<div className="mt-4 grid items-start grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
 					<ProductCard
-						img={eachProductContent[randomNumbers[0]].image}
+						id={eachProductContent[randomNumbers[0]].id}
 						heading={eachProductContent[randomNumbers[0]].heading}
 						text={eachProductContent[randomNumbers[0]].text1}
 						link={eachProductContent[randomNumbers[0]].link}
 					/>
 
 					<ProductCard
-						img={eachProductContent[randomNumbers[1]].image}
+						id={eachProductContent[randomNumbers[1]].id}
 						heading={eachProductContent[randomNumbers[1]].heading}
 						text={eachProductContent[randomNumbers[1]].text1}
 						link={eachProductContent[randomNumbers[1]].link}
 					/>
 
 					<ProductCard
-						img={eachProductContent[randomNumbers[2]].image}
+						id={eachProductContent[randomNumbers[2]].id}
 						heading={eachProductContent[randomNumbers[2]].heading}
 						text={eachProductContent[randomNumbers[2]].text1}
 						link={eachProductContent[randomNumbers[2]].link}
 					/>
 					<ProductCard
-						img={eachProductContent[randomNumbers[3]].image}
+						id={eachProductContent[randomNumbers[3]].id}
 						heading={eachProductContent[randomNumbers[3]].heading}
 						text={eachProductContent[randomNumbers[3]].text1}
 						link={eachProductContent[randomNumbers[3]].link}

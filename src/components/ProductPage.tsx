@@ -15,7 +15,7 @@ export const ProductPage = () => {
 						<div
 							key={index}>
 							<ProductCard
-								img={elem.image}
+								id={elem.id}
 								heading={elem.heading}
 								text={elem.text1}
 								link={elem.link}
