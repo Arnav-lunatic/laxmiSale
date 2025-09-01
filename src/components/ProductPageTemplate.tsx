@@ -52,7 +52,7 @@ function ProductPageTemplate({
 				<span className="text-lg">Back</span>
 			</button>
 			<div className="relative flex flex-col lg:flex-row items-center mb-20 w-full lg:w-[90%] mx-auto">
-				<img className="w-3/4 lg:w-11/12 xl:w-4/5" src={`https://res.cloudinary.com/yt-project/image/upload/${id}.jpg`} alt="..." />
+				<img className="w-3/4 lg:w-11/12 xl:w-3/8" src={`https://res.cloudinary.com/yt-project/image/upload/${id}.jpg`} alt="..." />
 
 				<div className="p-8 mr-0 lg:mr-24">
 					<div className="flex-1">
