@@ -56,7 +56,7 @@ function ProductPageTemplate({
 			</div>
 
 			<div className="relative flex flex-col lg:flex-row items-center mb-20 w-full xl:w-[90%] mx-auto">
-				<div className="relative w-3/4 md:w-1/2 cursor-pointer">
+				<div className="relative w-3/4 md:w-1/2 lg:w-2/3 xl:w-3/4 cursor-pointer">
 					<PhotoProvider>
 						<PhotoView src={`https://res.cloudinary.com/laxmisales/image/upload/${id}.png`}>
 							<img className="w-full aspect-square object-cover rounded-lg" src={`https://res.cloudinary.com/laxmisales/image/upload/${id}.png`} alt="..." />

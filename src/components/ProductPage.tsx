@@ -3,6 +3,7 @@ import { ProductCard } from "./Cards/ProductCard";
 import { eachProductContent } from "./Contents/EachProductContent";
 import { Dropdown, DropdownItem } from "flowbite-react";
 import { MdKeyboardArrowDown } from "react-icons/md";
+import ScrollToTopButton from "./ScrollToTopButton";
 
 export const ProductPage = () => {
 
@@ -27,12 +28,12 @@ export const ProductPage = () => {
 	);
 
 	return (
-		<div className="p-2 md:p-8">
+		<div className="relative p-2">
 			<h1 className="text-text font-extrabold text-3xl text-center h-fit">
 				Explore Our Product!!
 			</h1>
 
-			<div className="flex justify-end">
+			<div className="flex justify-end my-4">
 				<Dropdown
 					label="Categories"
 					dismissOnClick={true}
@@ -48,7 +49,9 @@ export const ProductPage = () => {
 				</Dropdown>
 			</div>
 
-			<div className="grid items-start grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mt-10">
+			<ScrollToTopButton />
+
+			<div className="grid items-start grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
 				{eachProductContent.filter((elem) => {
 					if (selectedCategory === "Categories") return true;
 					return elem.categories?.includes(selectedCategory);
