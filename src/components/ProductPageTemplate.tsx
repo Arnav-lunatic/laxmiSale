@@ -1,8 +1,9 @@
 import { FaChevronLeft } from "react-icons/fa";
+import { Button } from "flowbite-react";
 import { useNavigate } from "react-router-dom";
 import { ProductCard } from "./Cards/ProductCard";
-import { Button } from "flowbite-react";
 import { eachProductContent } from "./Contents/EachProductContent";
+import { PhotoProvider, PhotoView } from 'react-photo-view';
 
 interface props {
 	id: string;
@@ -43,18 +44,30 @@ function ProductPageTemplate({
 	);
 
 	return (
-		<div className=" relative mt-20">
-			<button
-				onClick={() => navigate(-1)}
-				className="cursor-pointer flex items-center gap-1 text-text z-30"
-			>
-				<FaChevronLeft />
-				<span className="text-lg">Back</span>
-			</button>
-			<div className="relative flex flex-col lg:flex-row items-center mb-20 w-full lg:w-[90%] mx-auto">
-				<img className="w-3/4 lg:w-11/12 xl:w-3/8" src={`https://res.cloudinary.com/yt-project/image/upload/${id}.jpg`} alt="..." />
+		<div className="relative p-1">
+			<div className="px-0 lg:px-4 mb-4">
+				<button
+					onClick={() => navigate(-1)}
+					className="cursor-pointer flex items-center gap-1 text-text"
+				>
+					<FaChevronLeft />
+					<span className="text-lg">Back</span>
+				</button>
+			</div>
 
-				<div className="p-8 mr-0 lg:mr-24">
+			<div className="relative flex flex-col lg:flex-row items-center mb-20 w-full xl:w-[90%] mx-auto">
+				<div className="relative w-3/4 md:w-1/2 cursor-pointer">
+					<PhotoProvider>
+						<PhotoView src={`https://res.cloudinary.com/laxmisales/image/upload/${id}.png`}>
+							<img className="w-full aspect-square object-cover rounded-lg" src={`https://res.cloudinary.com/laxmisales/image/upload/${id}.png`} alt="..." />
+						</PhotoView>
+					</PhotoProvider>
+
+					<div className="absolute bottom-4 left-1/2 -translate-x-1/2 px-2 py-1 border border-white/20 rounded-sm bg-white/20 backdrop-blur-md text-white text-xs pointer-events-none opacity-80">
+						view image
+					</div>
+				</div>
+				<div className="p-8 mr-0 lg:mr-16 xl:mr-24">
 					<div className="flex-1">
 						<h2 className="text-3xl md:text-5xl font-extrabold text-primary mb-4">
 							{heading}
@@ -99,7 +112,7 @@ function ProductPageTemplate({
 						</ul>
 					</div>
 				</div>
-				<div className="bg-secondary/50 absolute lg:top-0 bottom-0 right-0 h-13/14 sm:h-7/8 md:h-4/5 lg:h-full w-full lg:w-5/6 -z-1"></div>
+				<div className="bg-secondary/50 absolute lg:top-0 bottom-0 right-0 h-13/14 sm:h-7/8 md:h-4/5 lg:h-full w-full lg:w-5/6 -z-1 rounded-lg"></div>
 			</div>
 
 			<div className="py-20 p-4 border-t border-secondary">

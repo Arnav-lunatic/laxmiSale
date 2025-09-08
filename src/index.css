@@ -1,6 +1,7 @@
 @import "tailwindcss";
 @plugin "flowbite-react/plugin/tailwindcss";
 @source "../.flowbite-react/class-list.json";
+@import 'react-photo-view/dist/react-photo-view.css';
 
 @theme {
 	--color-background: #201315;

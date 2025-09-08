@@ -1,17 +1,17 @@
 export default function BrandComponents() {
 	const logos = [
-		"https://www.middlebycelfrost.com/allapi/assets/img/logo/logo-white.png",
-		"https://www.usha.com/themes/custom/framework/images/usha.png",
-		"https://www.voltas.in/themes/user/site/default/asset/img/logo_voltas.svg",
-		"https://www.nirvanaproducts.com/images/logo.png",
-		"https://mljbuhoejj94.i.optimole.com/w:678/h:139/q:mauto/ig:avif/https://stellargastronom.com/wp-content/uploads/2024/10/Stellar-Logo-updated.png",
-		"https://trufrost.com/assets/logo-01.webp",
-		"https://www.middlebycelfrost.com/allapi/assets/img/logo/logo-white.png",
-		"https://www.usha.com/themes/custom/framework/images/usha.png",
-		"https://www.voltas.in/themes/user/site/default/asset/img/logo_voltas.svg",
-		"https://www.nirvanaproducts.com/images/logo.png",
-		"https://mljbuhoejj94.i.optimole.com/w:678/h:139/q:mauto/ig:avif/https://stellargastronom.com/wp-content/uploads/2024/10/Stellar-Logo-updated.png",
-		"https://trufrost.com/assets/logo-01.webp",
+		{src: "https://www.middlebycelfrost.com/allapi/assets/img/logo/logo-white.png", alt: "Celfrost"},
+		{src: "https://www.usha.com/themes/custom/framework/images/usha.png", alt: "Usha"},
+		{src: "https://www.voltas.in/themes/user/site/default/asset/img/logo_voltas.svg", alt: "Voltas"},
+		{src: "https://www.nirvanaproducts.com/images/logo.png", alt: "Nirvana"},
+		{src: "https://mljbuhoejj94.i.optimole.com/w:678/h:139/q:mauto/ig:avif/https://stellargastronom.com/wp-content/uploads/2024/10/Stellar-Logo-updated.png", alt: "Stellar"},
+		{src: "https://trufrost.com/assets/logo-01.webp", alt: "Trufrost"},
+		{src: "https://www.middlebycelfrost.com/allapi/assets/img/logo/logo-white.png", alt: "Celfrost"},
+		{src: "https://www.usha.com/themes/custom/framework/images/usha.png", alt: "Usha"},
+		{src: "https://www.voltas.in/themes/user/site/default/asset/img/logo_voltas.svg", alt: "Voltas"},
+		{src: "https://www.nirvanaproducts.com/images/logo.png", alt: "Nirvana"},
+		{src: "https://mljbuhoejj94.i.optimole.com/w:678/h:139/q:mauto/ig:avif/https://stellargastronom.com/wp-content/uploads/2024/10/Stellar-Logo-updated.png", alt: "Stellar"},
+		{src: "https://trufrost.com/assets/logo-01.webp", alt: "Trufrost"},
 	];
 	return (
 		<div className="relative py-28 overflow-hidden">
@@ -29,7 +29,7 @@ export default function BrandComponents() {
 							key={index}
 							className="shrink-0 whitespace-nowrap"
 						>
-							<img className="h-4 lg:h-12" src={logo} alt="brand" />
+							<img className="h-4 lg:h-12 text-3xl font-bold" src={logo.src} alt={logo.alt} />
 						</span>
 					))}
 				</div>

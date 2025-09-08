@@ -8,43 +8,40 @@ Laxmi Sales Corporation is a leading provider of high-quality commercial kitchen
 
 ## 🚀 Features
 
-- **Rich Product Catalog**
-  - Commercial Bhatti
-  - Pizza Making Counter
-  - Sweet Display Counter
-  - Commercial Kitchen Sinks
-  - Bakery Equipment
+- **Extensive Product Categories**
+  - Commercial Kitchen Equipment
+  - Refrigerators
+  - Ovens
   - Display Counters
-  - And many more...
+  - Fryers
+  - Water Coolers
+  - And more...
 
-- **Detailed Product Information**
-  - High-resolution product images
-  - Comprehensive specifications
-  - Key features and benefits
-  - Customer-focused descriptions
+- **Product Filtering**
+  - Category-based filtering
+  - Easy product search
+  - Dynamic product display
 
 - **User Experience**
   - Responsive design for all devices
-  - Intuitive navigation
-  - Easy product browsing
-  - Quick access to product details
+  - Interactive product cards
+  - Smooth navigation
+  - Detailed product pages
 
 ## 🛠️ Technical Stack
 
 - **Frontend**
-  - React 18
-  - TypeScript
-  - Vite (for faster development)
-  - TailwindCSS (styling)
-  - Flowbite React (UI components)
+  - React 18 with TypeScript
+  - Vite for fast development
+  - TailwindCSS for styling
+  - Flowbite React components
+  - React Icons
 
-- **Routing & State**
-  - React Router v6
-  - Context API for state management
-
-- **Media & Deployment**
-  - Cloudinary (image hosting)
-  - Vercel (deployment platform)
+- **Performance**
+  - Optimized image loading
+  - Cloudinary CDN integration
+  - Responsive images
+  - Fast page loads
 
 ## 🏗️ Development Setup
 
@@ -59,12 +56,18 @@ Laxmi Sales Corporation is a leading provider of high-quality commercial kitchen
    npm install
    ```
 
-3. **Start Development Server**
+3. **Environment Setup**
+   Create `.env` file:
+   ```env
+   VITE_CLOUDINARY_URL=your_cloudinary_url
+   ```
+
+4. **Start Development Server**
    ```bash
    npm run dev
    ```
 
-4. **Build for Production**
+5. **Build for Production**
    ```bash
    npm run build
    ```
@@ -75,52 +78,66 @@ Laxmi Sales Corporation is a leading provider of high-quality commercial kitchen
 laxmiSale/
 ├── src/
 │   ├── components/
-│   │   ├── Cards/          # Reusable card components
-│   │   ├── Contents/       # Content data and configurations
-│   │   ├── productPages/   # Individual product page components
-│   │   ├── AboutUs.tsx     # About page component
-│   │   ├── ContactUs.tsx   # Contact page component
-│   │   └── Nav.tsx        # Navigation component
-│   ├── assets/            # Static assets (images, icons)
-│   ├── App.tsx           # Main application component
-│   └── main.tsx         # Application entry point
-├── public/              # Public static files
-├── package.json        # Project dependencies and scripts
-└── README.md          # Project documentation
+│   │   ├── Cards/           # Reusable card components
+│   │   │   └── ProductCard  # Product display cards
+│   │   ├── Contents/        # Content and data
+│   │   │   └── EachProductContent  # Product details
+│   │   ├── ProductPage      # Products listing page
+│   │   ├── AboutUs         # About page
+│   │   └── Nav            # Navigation
+│   ├── assets/            # Static assets
+│   └── styles/           # CSS and Tailwind styles
+├── public/              # Public assets
+└── package.json        # Dependencies
 ```
 
-## 🌐 Environment Variables
+## 🔍 Key Components
 
-Create a `.env` file in the root directory:
-```env
-VITE_CLOUDINARY_URL=your_cloudinary_url
+- **ProductCard**: Displays product information with images
+- **ProductPage**: Shows filtered product listings
+- **EachProductContent**: Contains detailed product information
+- **Navigation**: Responsive navbar with category filtering
+
+## 🌐 Deployment
+
+The application is deployed on Vercel:
+- Production: [https://laxmi-sale.vercel.app](https://laxmi-sale.vercel.app)
+- Preview: Available for each pull request
+
+## 🔧 Configuration
+
+### Cloudinary Setup
+1. Create a Cloudinary account
+2. Upload product images with product IDs as names
+3. Add Cloudinary URL to environment variables
+
+### Development Commands
+```bash
+npm run dev    # Start development server
+npm run build  # Create production build
+npm run lint   # Run ESLint
+npm run preview # Preview production build
 ```
-
-## 🚀 Deployment
-
-The website is automatically deployed to Vercel on every push to the main branch.
-Live demo: [Laxmi Sales Corporation](https://laxmi-sale.vercel.app)
-
-## 🤝 Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
-
-1. Fork the project
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
 
 ## 📞 Contact
 
 For business inquiries:
-- Email: info@laxmisales.com
-- Phone: [Your contact number]
-- Address: [Your business address]
+- **Email**: info@laxmisales.com
+- **Phone**: [Contact Number]
+- **Location**: [Business Address]
+- **Website**: [https://laxmi-sale.vercel.app](https://laxmi-sale.vercel.app)
+
+## 🤝 Contributing
+
+1. Fork the repository
+2. Create your feature branch
+3. Commit your changes
+4. Push to the branch
+5. Create a Pull Request
 
 ## 📝 License
 
-This project is proprietary and maintained by Laxmi Sales Corporation.
+Proprietary software of Laxmi Sales Corporation.
 
 ---
-Made by [Arnav](https://github.com/Arnav-lunatic)
+Developed by [Arnav](https://github.com/Arnav-lunatic) | © 2024 Laxmi Sales Corporation
