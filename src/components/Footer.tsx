@@ -17,7 +17,7 @@ export function FooterComponent() {
 	return (
 		<Footer
 			container
-			className="bg-transparent border-t border-t-secondary rounded-none"
+			className="bg-transparent border-t border-t-secondary rounded-none mt-4"
 		>
 			<div className="w-full">
 				<div className="grid w-full justify-between sm:flex sm:justify-between md:flex md:grid-cols-1">
@@ -35,20 +35,15 @@ export function FooterComponent() {
 					</div>
 					<div className="grid grid-cols-2 gap-8 sm:mt-4 sm:grid-cols-3 sm:gap-6">
 						<div>
-							<FooterTitle title="PRODUCTS" />
+							<FooterTitle title="PRODUCTS CATEGORIES" />
 							<FooterLinkGroup col>
-								<FooterLink href="/products/commercial-bhatti">
-									Commercial Bhatti
-								</FooterLink>
-								<FooterLink href="/products/commercial-kitchen-sink">
-									Commercial Kitchen Sink
-								</FooterLink>
-								<FooterLink href="/products/pizza-making-counter">
-									Pizza Making Counter
-								</FooterLink>
-								<FooterLink href="/products/sweet-display-counter">
-									Sweet Display Counter
-								</FooterLink>
+								{
+									["Commercial Kitchen Equipment", "Refrigerators", "Ovens", "Display Counters", "Fryers", "Water Coolers", "Other Products"].map((item, index) => (
+										<FooterLink key={index} href={`/products/category/${item.toLowerCase().replace(/\s+/g, "-")}`}>
+											{item}
+										</FooterLink>
+									))
+								}
 							</FooterLinkGroup>
 						</div>
 
@@ -67,13 +62,13 @@ export function FooterComponent() {
 								<FooterLink href="/">
 									Home
 								</FooterLink>
-								<FooterLink href="/products">
+								<FooterLink href="/products/category/all">
 									Our Products
 								</FooterLink>
-								<FooterLink href="/products/about">
+								<FooterLink href="/about">
 									About Us
 								</FooterLink>
-								<FooterLink href="/products/contact">
+								<FooterLink href="/contact">
 									Contact Us
 								</FooterLink>
 							</FooterLinkGroup>
@@ -82,11 +77,26 @@ export function FooterComponent() {
 				</div>
 				<FooterDivider />
 				<div className="w-full sm:flex sm:items-center sm:justify-between">
-					<FooterCopyright
-						href="#"
-						by="Laxmi sales corp."
-						year={2025}
-					/>
+
+					<div className="flex flex-col sm:items-center">
+						<FooterCopyright
+							href="#"
+							by="Laxmi sales corperation™"
+							year={2025}
+						/>
+						<div className="text-xs text-gray-500">
+							Designed & Developed by{" "}
+							<a
+								href="https://www.linkedin.com/in/arnav-singh-1360642b9/"
+								className="hover:underline"
+								target="_blank"
+								rel="noopener noreferrer"
+							>
+								Arnav
+							</a>
+						</div>
+					</div>
+
 					<div className="mt-4 flex space-x-6 sm:mt-0 sm:justify-center">
 						<FooterIcon
 							href="https://www.facebook.com/share/1ADTHoZd31/"

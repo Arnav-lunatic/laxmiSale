@@ -1,143 +1,141 @@
 # 🏢 Laxmi Sales Corporation
 
-Welcome to Laxmi Sales Corporation - Your Premier Source for Commercial Kitchen Equipment and Appliances.
+Welcome to Laxmi Sales Corporation - Your Premier Source for Commercial Kitchen Equipment and Appliances since 1995.
 
 ## 🌟 About Us
 
-Laxmi Sales Corporation is a leading provider of high-quality commercial kitchen equipment and appliances. With years of experience in the industry, we offer comprehensive solutions for restaurants, hotels, sweet shops, and food service businesses.
+Laxmi Sales Corporation is a trusted name in commercial kitchen equipment, serving businesses across India for over 25 years. We specialize in providing high-quality equipment solutions for:
+- Restaurants & Hotels
+- Sweet Shops & Bakeries
+- Food Service Businesses
+- Catering Companies
+- Industrial Kitchens
+
+## 🎯 Our Products
+
+We offer a comprehensive range of commercial kitchen equipment:
+
+| Category | Products |
+|----------|----------|
+| Kitchen Equipment | Commercial Bhatti, Dosa Makers, Mixers |
+| Refrigeration | Visi Coolers, Deep Freezers, Display Units |
+| Ovens | Pizza Ovens, Commercial Ovens, Tandoors |
+| Display Solutions | Sweet Counters, Food Display Units |
+| Specialized Equipment | Ice Cream Machines, Cotton Candy Makers |
 
 ## 🚀 Features
 
-- **Extensive Product Categories**
-  - Commercial Kitchen Equipment
-  - Refrigerators
-  - Ovens
-  - Display Counters
-  - Fryers
-  - Water Coolers
-  - And more...
+- **Smart Product Search**
+  - Advanced filtering system
+  - Category-based organization
+  - Detailed product specifications
+  - Real-time search functionality
 
-- **Product Filtering**
-  - Category-based filtering
-  - Easy product search
-  - Dynamic product display
+- **Rich Product Information**
+  - High-quality product images
+  - Detailed specifications
+  - Key features highlight
+  - Customer benefits section
 
-- **User Experience**
-  - Responsive design for all devices
-  - Interactive product cards
-  - Smooth navigation
-  - Detailed product pages
+- **Modern User Experience**
+  - Mobile-first responsive design
+  - Fast loading pages
+  - Intuitive navigation
+  - Accessible interface
 
-## 🛠️ Technical Stack
+## 🛠️ Technical Implementation
 
-- **Frontend**
-  - React 18 with TypeScript
-  - Vite for fast development
-  - TailwindCSS for styling
-  - Flowbite React components
-  - React Icons
-
-- **Performance**
-  - Optimized image loading
-  - Cloudinary CDN integration
-  - Responsive images
-  - Fast page loads
-
-## 🏗️ Development Setup
-
-1. **Clone the Repository**
-   ```bash
-   git clone https://github.com/Arnav-lunatic/laxmiSale.git
-   cd laxmiSale
-   ```
-
-2. **Install Dependencies**
-   ```bash
-   npm install
-   ```
-
-3. **Environment Setup**
-   Create `.env` file:
-   ```env
-   VITE_CLOUDINARY_URL=your_cloudinary_url
-   ```
-
-4. **Start Development Server**
-   ```bash
-   npm run dev
-   ```
-
-5. **Build for Production**
-   ```bash
-   npm run build
-   ```
-
-## 📂 Project Structure
-
-```
-laxmiSale/
-├── src/
-│   ├── components/
-│   │   ├── Cards/           # Reusable card components
-│   │   │   └── ProductCard  # Product display cards
-│   │   ├── Contents/        # Content and data
-│   │   │   └── EachProductContent  # Product details
-│   │   ├── ProductPage      # Products listing page
-│   │   ├── AboutUs         # About page
-│   │   └── Nav            # Navigation
-│   ├── assets/            # Static assets
-│   └── styles/           # CSS and Tailwind styles
-├── public/              # Public assets
-└── package.json        # Dependencies
+### Frontend Architecture
+```typescript
+src/
+├── components/
+│   ├── Cards/
+│   │   └── ProductCard.tsx    // Product display component
+│   ├── Pages/
+│   │   └── ProductPage.tsx    // Main product listing
+│   └── Contents/
+│       └── EachProductContent.ts  // Product data
+├── styles/
+│   └── tailwind.css          // Custom styling
+└── main.tsx                  // App entry point
 ```
 
-## 🔍 Key Components
+### Key Technologies
+- **Core**: React 18, TypeScript, Vite
+- **UI**: TailwindCSS, Flowbite React
+- **State Management**: React Context
+- **Routing**: React Router v6
+- **Image Optimization**: Cloudinary CDN
+- **Deployment**: Vercel
 
-- **ProductCard**: Displays product information with images
-- **ProductPage**: Shows filtered product listings
-- **EachProductContent**: Contains detailed product information
-- **Navigation**: Responsive navbar with category filtering
+## 🏗️ Development
 
-## 🌐 Deployment
+### Prerequisites
+- Node.js >= 16.0.0
+- npm >= 8.0.0
+- Git
 
-The application is deployed on Vercel:
-- Production: [https://laxmi-sale.vercel.app](https://laxmi-sale.vercel.app)
-- Preview: Available for each pull request
-
-## 🔧 Configuration
-
-### Cloudinary Setup
-1. Create a Cloudinary account
-2. Upload product images with product IDs as names
-3. Add Cloudinary URL to environment variables
-
-### Development Commands
+### Quick Start
 ```bash
-npm run dev    # Start development server
-npm run build  # Create production build
-npm run lint   # Run ESLint
-npm run preview # Preview production build
+# Clone repository
+git clone https://github.com/Arnav-lunatic/laxmiSale.git
+
+# Install dependencies
+cd laxmiSale && npm install
+
+# Set up environment
+cp .env.example .env
+# Edit .env with your Cloudinary credentials
+
+# Start development server
+npm run dev
 ```
 
-## 📞 Contact
+### Available Scripts
+```bash
+npm run dev      # Development mode
+npm run build    # Production build
+npm run preview  # Preview production
+npm run lint     # Code linting
+```
 
-For business inquiries:
-- **Email**: info@laxmisales.com
-- **Phone**: [Contact Number]
-- **Location**: [Business Address]
-- **Website**: [https://laxmi-sale.vercel.app](https://laxmi-sale.vercel.app)
+## 📦 Production Deployment
+
+```bash
+# Build production assets
+npm run build
+
+# Preview build locally
+npm run preview
+
+# Deploy to Vercel
+vercel --prod
+```
+
+## 📞 Contact & Support
+
+### Business Inquiries
+- 📧 Email: sales@laxmisales.com
+- 📱 Phone: +91-XXXXXXXXXX
+- 🏢 Address: [Your Complete Address]
+
+### Technical Support
+- 💻 GitHub Issues: [Create an issue](https://github.com/Arnav-lunatic/laxmiSale/issues)
+- 📧 Dev Email: dev@laxmisales.com
 
 ## 🤝 Contributing
 
-1. Fork the repository
-2. Create your feature branch
-3. Commit your changes
-4. Push to the branch
-5. Create a Pull Request
+We welcome contributions! Please see our [Contributing Guide](CONTRIBUTING.md) for details.
+
+```bash
+git checkout -b feature/your-feature
+git commit -m "Add awesome feature"
+git push origin feature/your-feature
+```
 
 ## 📝 License
 
-Proprietary software of Laxmi Sales Corporation.
+Copyright © 2024 Laxmi Sales Corporation. All rights reserved.
 
 ---
-Developed by [Arnav](https://github.com/Arnav-lunatic) | © 2024 Laxmi Sales Corporation
+Developed by [Arnav](https://github.com/Arnav-lunatic)

@@ -25,7 +25,7 @@ export function Menu({ isOpen, setIsOpen }: openDrawer) {
 
 	const menuOptions = [
 		{ title: "Home", icon: HiHome, path: "/" },
-		{ title: "Products", icon: AiFillProduct, path: "/products" },
+		{ title: "Products", icon: AiFillProduct, path: "/products/category/all" },
 		{ title: "Brands", icon: FaSitemap, path: "" },
 		{ title: "About us", icon: FaInfoCircle, path: "/about" },
 	];
@@ -65,7 +65,7 @@ export function Menu({ isOpen, setIsOpen }: openDrawer) {
 									</SidebarItemGroup>
 									<SidebarItemGroup>
 										<SidebarItem
-											className="text-text hover:bg-secondary"
+											className="text-text hover:bg-secondary cursor-pointer"
 											onClick={() => {
 												handleClose()
 												navigate("contact")

@@ -463,9 +463,9 @@ export const eachProductContent: Array<{
 		link: "/products/stainless-steel-water-cooler",
 	},
 	{
-		id: "sweet-display",
+		id: "display-counter",
 		categories: ["Display Counters"],
-		heading: "Sweet Display",
+		heading: "Display Counter",
 		text1: "Attractive display counter designed to showcase sweets and desserts in shops and bakeries.",
 		text2: "Features glass panels and built-in refrigeration to maintain freshness and enhance product visibility.",
 		key_features: [
@@ -747,29 +747,6 @@ export const eachProductContent: Array<{
 		],
 		link: "/products/manual-paneer-press-machine",
 	},
-
-	{
-		id: "meat-mincer-machine",
-		categories: ["Commercial Kitchen Equipment"],
-		heading: "Meat Mincer Machine",
-		text1: "Heavy-duty machine for grinding meat efficiently in butcheries, restaurants, and food processing units.",
-		text2: "Designed for consistent output with stainless steel parts and easy cleaning features, ideal for high-volume operations.",
-		key_features: [
-			{ "High-Power Motor": "Efficient grinding of meat." },
-			{ "Stainless Steel Construction": "Durable and hygienic." },
-			{ "Multiple Plate Sizes": "Choose different grinding textures." },
-			{ "Safety Features": "Prevents accidents during operation." },
-			{ "Easy Disassembly": "Facilitates quick cleaning." },
-		],
-		customer_benefits: [
-			{ "Consistent Meat Texture": "Uniform mincing for recipes." },
-			{ "High Efficiency": "Handles large quantities quickly." },
-			{ "Hygienic Design": "Reduces contamination risk." },
-			{ "Durable and Long-Lasting": "Built for commercial use." },
-		],
-		link: "/products/meat-mincer-machine",
-	},
-
 	{
 		id: "minibar",
 		categories: ["Refrigerators"],

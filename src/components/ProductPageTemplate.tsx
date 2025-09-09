@@ -149,7 +149,7 @@ function ProductPageTemplate({
 				</div>
 
 				<Button
-					onClick={() => navigate("/products")}
+					onClick={() => navigate("/products/category/all")}
 					className="bg-accent mx-auto my-4 border border-accent hover:bg-transparent hover:scale-110 transition cursor-pointer"
 				>
 					View more

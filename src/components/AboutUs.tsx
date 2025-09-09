@@ -1,9 +1,11 @@
 import { Carousel } from "flowbite-react";
 import founderImg from "/src/assets/founder.jpeg";
+import ScrollToTopButton from "./ScrollToTopButton";
 
 export const AboutUs = () => {
 	return (
-		<section className="p-1">
+		<section className="relative p-1">
+			<ScrollToTopButton />
 			<div className="absolute top-0 right-0 left-0 h-screen -z-1">
 				<Carousel className="invisible lg:visible" leftControl=" " rightControl=" ">
 					<img
