@@ -8,6 +8,119 @@ export const eachProductContent: Array<{
 	customer_benefits: { [key: string]: string }[];
 }> = [
 	{
+		id: "stainless-steel-water-cooler",
+		categories: ["Water Coolers"],
+		heading: "Stainless Steel Water Cooler",
+		text1: "Robust water cooler designed to provide chilled drinking water in commercial and institutional settings.",
+		text2: "Durable stainless steel body with energy-efficient refrigeration ensures long-term use and hygiene.",
+		key_features: [
+			{ "Stainless Steel Body": "Hygienic and durable." },
+			{ "Energy Efficient Cooling": "Low power consumption." },
+			{ "Large Storage Capacity": "Meets high-demand environments." },
+			{ "Push Button Dispenser": "Easy access to water." },
+			{ "Safety Features": "Temperature regulation and auto shut-off." },
+		],
+		customer_benefits: [
+			{ "Reliable Cold Water Supply": "Consistent chilled water." },
+			{ "Hygienic Design": "Prevents bacterial growth." },
+			{ Durability: "Long-lasting performance." },
+			{ "Cost-Efficient Operation": "Saves energy." },
+		],
+	},
+	{
+		id: "display-counter",
+		categories: ["Display Counters"],
+		heading: "Display Counter",
+		text1: "Attractive display counter designed to showcase sweets and desserts in shops and bakeries.",
+		text2: "Features glass panels and built-in refrigeration to maintain freshness and enhance product visibility.",
+		key_features: [
+			{ "Glass Display Panels": "Clear visibility of sweets." },
+			{ "Refrigerated Storage": "Keeps items fresh." },
+			{ "Stainless Steel Construction": "Durable and easy to clean." },
+			{ "Adjustable Shelving": "Customizable display space." },
+			{ "Energy Efficient": "Low power consumption." },
+		],
+		customer_benefits: [
+			{ "Enhanced Visual Appeal": "Attracts customers." },
+			{ "Fresh Product Presentation": "Maintains quality of sweets." },
+			{ "Durable Build": "Long-lasting for commercial use." },
+			{ "Ease of Use": "Simple display and restocking." },
+		],
+	},
+	{
+		id: "hard-top-freezer",
+		categories: ["Freezers"],
+		heading: "Deep Freezer",
+		text1: "Commercial freezer designed with a solid top lid for bulk freezing and storage of food products.",
+		text2: "Ideal for ice cream parlors, supermarkets, and commercial kitchens needing reliable cold storage solutions.",
+		key_features: [
+			{ "Robust Lid": "Secure storage with easy access." },
+			{
+				"Efficient Cooling System":
+					"Maintains consistent low temperatures.",
+			},
+			{ "Stainless Steel Interior": "Durable and hygienic." },
+			{
+				"Energy Efficient Compressor":
+					"Optimized for lower power consumption.",
+			},
+			{
+				"Large Storage Capacity":
+					"Stores significant quantities of frozen goods.",
+			},
+		],
+		customer_benefits: [
+			{
+				"Reliable Preservation":
+					"Maintains product quality for longer periods.",
+			},
+			{ "Low Maintenance": "Simple cleaning and upkeep." },
+			{ "Cost-Effective": "Reduces energy expenses." },
+			{ "User-Friendly Design": "Easy loading and unloading of items." },
+		],
+		},
+	{
+		id: "visi-cooler",
+		categories: ["Refrigerators"],
+		heading: "Visi Cooler",
+		text1: "A transparent glass-door cooler designed for storing and displaying beverages.",
+		text2: "The Visi Cooler is widely used in restaurants, retail shops, and cafes. With its sleek design and efficient cooling system, it ensures beverages remain fresh and visible to customers.",
+		key_features: [
+			{
+				"Transparent Glass Doors":
+					"Provides clear visibility of stored items.",
+			},
+			{
+				"Fast Cooling": "Maintains consistent low temperatures.",
+			},
+			{
+				"Durable Structure": "Built for heavy-duty commercial use.",
+			},
+			{
+				"Adjustable Shelves": "Flexible storage for various beverages.",
+			},
+			{
+				"Energy Saving": "Efficient cooling reduces electricity usage.",
+			},
+		],
+		customer_benefits: [
+			{
+				"Boosts Sales":
+					"Attractive display encourages impulse purchases.",
+			},
+			{
+				Convenience: "Keeps beverages chilled and ready to serve.",
+			},
+			{
+				"Reliable Cooling": "Ensures long-lasting freshness.",
+			},
+			{
+				"Practical Investment":
+					"Durable and efficient for food businesses.",
+			},
+		],
+	},
+	{
 		id: "pizza-oven",
 		categories: ["Commercial Kitchen Equipment", "Ovens"],
 		heading: "Pizza Oven",
@@ -221,47 +334,6 @@ export const eachProductContent: Array<{
 		],
 	},
 	{
-		id: "visi-cooler",
-		categories: ["Refrigerators"],
-		heading: "Visi Cooler",
-		text1: "A transparent glass-door cooler designed for storing and displaying beverages.",
-		text2: "The Visi Cooler is widely used in restaurants, retail shops, and cafes. With its sleek design and efficient cooling system, it ensures beverages remain fresh and visible to customers.",
-		key_features: [
-			{
-				"Transparent Glass Doors":
-					"Provides clear visibility of stored items.",
-			},
-			{
-				"Fast Cooling": "Maintains consistent low temperatures.",
-			},
-			{
-				"Durable Structure": "Built for heavy-duty commercial use.",
-			},
-			{
-				"Adjustable Shelves": "Flexible storage for various beverages.",
-			},
-			{
-				"Energy Saving": "Efficient cooling reduces electricity usage.",
-			},
-		],
-		customer_benefits: [
-			{
-				"Boosts Sales":
-					"Attractive display encourages impulse purchases.",
-			},
-			{
-				Convenience: "Keeps beverages chilled and ready to serve.",
-			},
-			{
-				"Reliable Cooling": "Ensures long-lasting freshness.",
-			},
-			{
-				"Practical Investment":
-					"Durable and efficient for food businesses.",
-			},
-		],
-	},
-	{
 		id: "bread-slicer",
 		categories: ["Commercial Kitchen Equipment"],
 		heading: "Bread Slicer",
@@ -427,46 +499,6 @@ export const eachProductContent: Array<{
 				"Regulatory Compliance":
 					"Meets hygiene and ventilation standards.",
 			},
-		],
-	},
-	{
-		id: "stainless-steel-water-cooler",
-		categories: ["Water Coolers"],
-		heading: "Stainless Steel Water Cooler",
-		text1: "Robust water cooler designed to provide chilled drinking water in commercial and institutional settings.",
-		text2: "Durable stainless steel body with energy-efficient refrigeration ensures long-term use and hygiene.",
-		key_features: [
-			{ "Stainless Steel Body": "Hygienic and durable." },
-			{ "Energy Efficient Cooling": "Low power consumption." },
-			{ "Large Storage Capacity": "Meets high-demand environments." },
-			{ "Push Button Dispenser": "Easy access to water." },
-			{ "Safety Features": "Temperature regulation and auto shut-off." },
-		],
-		customer_benefits: [
-			{ "Reliable Cold Water Supply": "Consistent chilled water." },
-			{ "Hygienic Design": "Prevents bacterial growth." },
-			{ Durability: "Long-lasting performance." },
-			{ "Cost-Efficient Operation": "Saves energy." },
-		],
-	},
-	{
-		id: "display-counter",
-		categories: ["Display Counters"],
-		heading: "Display Counter",
-		text1: "Attractive display counter designed to showcase sweets and desserts in shops and bakeries.",
-		text2: "Features glass panels and built-in refrigeration to maintain freshness and enhance product visibility.",
-		key_features: [
-			{ "Glass Display Panels": "Clear visibility of sweets." },
-			{ "Refrigerated Storage": "Keeps items fresh." },
-			{ "Stainless Steel Construction": "Durable and easy to clean." },
-			{ "Adjustable Shelving": "Customizable display space." },
-			{ "Energy Efficient": "Low power consumption." },
-		],
-		customer_benefits: [
-			{ "Enhanced Visual Appeal": "Attracts customers." },
-			{ "Fresh Product Presentation": "Maintains quality of sweets." },
-			{ "Durable Build": "Long-lasting for commercial use." },
-			{ "Ease of Use": "Simple display and restocking." },
 		],
 	},
 	{
@@ -637,39 +669,6 @@ export const eachProductContent: Array<{
 			{ "User Convenience": "Easy access for customers and staff." },
 		],
 	},
-	{
-		id: "hard-top-freezer",
-		categories: ["Freezers"],
-		heading: "Hard Top Freezer",
-		text1: "Commercial freezer designed with a solid top lid for bulk freezing and storage of food products.",
-		text2: "Ideal for ice cream parlors, supermarkets, and commercial kitchens needing reliable cold storage solutions.",
-		key_features: [
-			{ "Robust Lid": "Secure storage with easy access." },
-			{
-				"Efficient Cooling System":
-					"Maintains consistent low temperatures.",
-			},
-			{ "Stainless Steel Interior": "Durable and hygienic." },
-			{
-				"Energy Efficient Compressor":
-					"Optimized for lower power consumption.",
-			},
-			{
-				"Large Storage Capacity":
-					"Stores significant quantities of frozen goods.",
-			},
-		],
-		customer_benefits: [
-			{
-				"Reliable Preservation":
-					"Maintains product quality for longer periods.",
-			},
-			{ "Low Maintenance": "Simple cleaning and upkeep." },
-			{ "Cost-Effective": "Reduces energy expenses." },
-			{ "User-Friendly Design": "Easy loading and unloading of items." },
-		],
-	},
-
 	{
 		id: "ice-machine",
 		categories: ["Commercial Kitchen Equipment", "Freezers"],

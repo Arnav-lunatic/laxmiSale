@@ -6,31 +6,8 @@ export const AboutUs = () => {
 	return (
 		<section className="relative p-1">
 			<ScrollToTopButton />
-			<div className="absolute top-0 right-0 left-0 h-screen -z-1">
-				<Carousel className="invisible lg:visible" leftControl=" " rightControl=" ">
-					<img
-						src="https://images.pexels.com/photos/16788578/pexels-photo-16788578/free-photo-of-coffee-machine-with-silver-cups.jpeg"
-						alt="..."
-					/>
-					<img
-						src="https://images.pexels.com/photos/260922/pexels-photo-260922.jpeg"
-						alt="..."
-					/>
-					<img
-						src="https://images.pexels.com/photos/12303760/pexels-photo-12303760.jpeg"
-						alt="..."
-					/>
-					<img
-						src="https://images.pexels.com/photos/19296796/pexels-photo-19296796/free-photo-of-man-cut-nails-with-grinder.jpeg"
-						alt="..."
-					/>
-					<img
-						src="https://images.pexels.com/photos/6045041/pexels-photo-6045041.jpeg"
-						alt="..."
-					/>
-				</Carousel>
-			</div>
-			<div className="mx-auto border border-secondary rounded-2xl p-1 md:p-10 lg:p-20 my-20  grid grid-cols-1 lg:grid-cols-[4fr_3fr] gap-10 items-center bg-background/50 backdrop-blur-lg">
+			
+			<div className="mx-auto border border-secondary rounded-2xl p-1 md:p-10 lg:p-20 grid grid-cols-1 lg:grid-cols-[4fr_3fr] gap-10 items-center bg-background/50 backdrop-blur-lg">
 				<div>
 					<div className="pb-8">
 						<h1 className="text-text text-5xl font-bold">
