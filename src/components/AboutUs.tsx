@@ -1,11 +1,10 @@
-import { Carousel } from "flowbite-react";
 import founderImg from "/src/assets/founder.jpeg";
-import ScrollToTopButton from "./ScrollToTopButton";
+import FloatingActionButtons from "./FloatingActionButtons";
 
 export const AboutUs = () => {
 	return (
 		<section className="relative p-1">
-			<ScrollToTopButton />
+			<FloatingActionButtons />
 			
 			<div className="mx-auto border border-secondary rounded-2xl p-1 md:p-10 lg:p-20 grid grid-cols-1 lg:grid-cols-[4fr_3fr] gap-10 items-center bg-background/50 backdrop-blur-lg">
 				<div>

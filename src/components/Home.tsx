@@ -1,7 +1,7 @@
 import BrandComponents from "./BrandComponents";
 import { Header } from "./Hearder";
 import {ProductComponent} from "./ProductComponent";
-import ScrollToTopButton from "./ScrollToTopButton";
+import FloatingActionButtons from "./FloatingActionButtons";
 
 export default function () {
 	return (
@@ -9,7 +9,7 @@ export default function () {
 			<Header />
 			<BrandComponents />
 			<ProductComponent />
-			<ScrollToTopButton/>
+			<FloatingActionButtons/>
 		</div>
 	);
 }
