@@ -8,12 +8,12 @@ interface props {
 	link?: string;
 }
 
-export const ProductCard = ({ id, heading, text, link }: props) => {
+export const ProductCard = ({ id, heading, text }: props) => {
 	const navigate = useNavigate();
 	return (
 		<Card
 			onClick={() => {
-				link ? navigate(link) : navigate('')
+				navigate(`/products/${id}`);
 			}}
 			className="w-full bg-secondary border-secondary cursor-pointer hover:scale-104 transition"
 			renderImage={() => <img className="rounded-t-lg h-96 w-full object-cover" src={`https://res.cloudinary.com/laxmisales/image/upload/${id}.png`} alt={heading} />}

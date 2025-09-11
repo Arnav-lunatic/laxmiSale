@@ -119,7 +119,6 @@ export const ProductPage = () => {
 									id={elem.id}
 									heading={elem.heading}
 									text={elem.text1}
-									link={elem.link}
 								/>
 							</div>
 						);

@@ -10,7 +10,7 @@ interface openDrawer {
 export function Nav({ isOpen, setIsOpen }: openDrawer) {
 	const navigate = useNavigate()
 	return (
-		<div className="bg-background border border-b-secondary bot flex items-center justify-between fixed top-0 right-1/2 translate-x-1/2 w-full z-50 px-4">
+		<div className="bg-background border border-b-secondary bot flex items-center justify-between fixed top-0 right-1/2 translate-x-1/2 w-full z-50 md:px-4">
 			<div
 				onClick={() => navigate("/")}
 				className="flex gap-2 cursor-pointer">

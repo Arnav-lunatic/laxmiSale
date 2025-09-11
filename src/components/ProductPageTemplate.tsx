@@ -56,7 +56,7 @@ function ProductPageTemplate({
 			</div>
 
 			<div className="relative flex flex-col lg:flex-row items-center mb-20 w-full xl:w-[90%] mx-auto">
-				<div className="relative w-3/4 md:w-1/2 lg:w-2/3 xl:w-3/4 cursor-pointer">
+				<div className="relative w-3/4 md:w-1/2 cursor-pointer">
 					<PhotoProvider>
 						<PhotoView src={`https://res.cloudinary.com/laxmisales/image/upload/${id}.png`}>
 							<img className="w-full aspect-square object-cover rounded-lg" src={`https://res.cloudinary.com/laxmisales/image/upload/${id}.png`} alt="..." />
@@ -115,36 +115,27 @@ function ProductPageTemplate({
 				<div className="bg-secondary/50 absolute lg:top-0 bottom-0 right-0 h-13/14 sm:h-7/8 md:h-4/5 lg:h-full w-full lg:w-5/6 -z-1 rounded-lg"></div>
 			</div>
 
-			<div className="py-20 p-4 border-t border-secondary">
+			<div className="w-full max-w-[1300px] m-auto py-8 p-4 border-t border-secondary">
 				<h1 className="text-text text-4xl font-bold text-center">
 					More Products
 				</h1>
-				<div className="mt-4 grid items-start grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
+				<div className="mt-4 grid items-start grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
 					<ProductCard
 						id={eachProductContent[randomNumbers[0]].id}
 						heading={eachProductContent[randomNumbers[0]].heading}
 						text={eachProductContent[randomNumbers[0]].text1}
-						link={eachProductContent[randomNumbers[0]].link}
 					/>
 
 					<ProductCard
 						id={eachProductContent[randomNumbers[1]].id}
 						heading={eachProductContent[randomNumbers[1]].heading}
 						text={eachProductContent[randomNumbers[1]].text1}
-						link={eachProductContent[randomNumbers[1]].link}
 					/>
 
 					<ProductCard
 						id={eachProductContent[randomNumbers[2]].id}
 						heading={eachProductContent[randomNumbers[2]].heading}
 						text={eachProductContent[randomNumbers[2]].text1}
-						link={eachProductContent[randomNumbers[2]].link}
-					/>
-					<ProductCard
-						id={eachProductContent[randomNumbers[3]].id}
-						heading={eachProductContent[randomNumbers[3]].heading}
-						text={eachProductContent[randomNumbers[3]].text1}
-						link={eachProductContent[randomNumbers[3]].link}
 					/>
 				</div>
 

@@ -6,7 +6,6 @@ export const eachProductContent: Array<{
 	text2: string;
 	key_features: { [key: string]: string }[];
 	customer_benefits: { [key: string]: string }[];
-	link: string;
 }> = [
 	{
 		id: "pizza-oven",
@@ -51,7 +50,6 @@ export const eachProductContent: Array<{
 					"Supports long-term operations in food businesses.",
 			},
 		],
-		link: "/products/pizza-oven",
 	},
 	{
 		id: "electric-deep-fryer",
@@ -94,7 +92,6 @@ export const eachProductContent: Array<{
 					"Long-lasting appliance for commercial kitchens.",
 			},
 		],
-		link: "/products/electric-deep-fryer",
 	},
 	{
 		id: "manual-gas-fryer",
@@ -137,7 +134,6 @@ export const eachProductContent: Array<{
 				"Long-Term Durability": "Built for continuous commercial use.",
 			},
 		],
-		link: "/products/manual-gas-fryer",
 	},
 	{
 		id: "gas-range-with-oven",
@@ -181,7 +177,6 @@ export const eachProductContent: Array<{
 					"A strong investment for commercial kitchens.",
 			},
 		],
-		link: "/products/gas-range-with-oven",
 	},
 	{
 		id: "cotton-candy-machine",
@@ -224,7 +219,6 @@ export const eachProductContent: Array<{
 				"Cost Efficient": "Low running costs with high returns.",
 			},
 		],
-		link: "/products/cotton-candy-machine",
 	},
 	{
 		id: "visi-cooler",
@@ -266,7 +260,6 @@ export const eachProductContent: Array<{
 					"Durable and efficient for food businesses.",
 			},
 		],
-		link: "/products/visi-cooler",
 	},
 	{
 		id: "bread-slicer",
@@ -309,7 +302,6 @@ export const eachProductContent: Array<{
 					"Enhances productivity and customer satisfaction.",
 			},
 		],
-		link: "/products/bread-slicer",
 	},
 	{
 		id: "bakery-mixer",
@@ -354,7 +346,6 @@ export const eachProductContent: Array<{
 					"Durable investment for commercial kitchens.",
 			},
 		],
-		link: "/products/bakery-mixer",
 	},
 	{
 		id: "single-deck-pizza-oven",
@@ -375,7 +366,6 @@ export const eachProductContent: Array<{
 			{ "Durable and Hygienic": "Built for continuous use." },
 			{ "Easy Operation": "Minimal training required." },
 		],
-		link: "/products/single-deck-pizza-oven",
 	},
 
 	{
@@ -403,7 +393,6 @@ export const eachProductContent: Array<{
 					"Hassle-free cleaning and oil management.",
 			},
 		],
-		link: "/products/ss-body-deep-fat-fryer",
 	},
 	{
 		id: "ss-commercial-hood-ducting",
@@ -439,7 +428,6 @@ export const eachProductContent: Array<{
 					"Meets hygiene and ventilation standards.",
 			},
 		],
-		link: "/products/ss-commercial-hood-ducting",
 	},
 	{
 		id: "stainless-steel-water-cooler",
@@ -460,7 +448,6 @@ export const eachProductContent: Array<{
 			{ Durability: "Long-lasting performance." },
 			{ "Cost-Efficient Operation": "Saves energy." },
 		],
-		link: "/products/stainless-steel-water-cooler",
 	},
 	{
 		id: "display-counter",
@@ -481,7 +468,6 @@ export const eachProductContent: Array<{
 			{ "Durable Build": "Long-lasting for commercial use." },
 			{ "Ease of Use": "Simple display and restocking." },
 		],
-		link: "/products/sweet-display",
 	},
 	{
 		id: "tandoor",
@@ -505,7 +491,6 @@ export const eachProductContent: Array<{
 			{ "Efficient Heating": "Consistent high temperatures." },
 			{ "Durable Build": "Designed for long-term commercial use." },
 		],
-		link: "/products/tandoor",
 	},
 	{
 		id: "under-counter-refrigerator",
@@ -526,7 +511,6 @@ export const eachProductContent: Array<{
 			{ "Durable and Long-Lasting": "Built for heavy use." },
 			{ "Space Saving": "Utilizes kitchen space effectively." },
 		],
-		link: "/products/under-counter-refrigerator",
 	},
 	{
 		id: "vertical-bun-toaster",
@@ -547,7 +531,6 @@ export const eachProductContent: Array<{
 			{ "Durable Design": "Built for commercial use." },
 			{ "Easy to Operate": "Minimal training required." },
 		],
-		link: "/products/vertical-bun-toaster",
 	},
 
 	{
@@ -569,7 +552,6 @@ export const eachProductContent: Array<{
 			{ "Durable and Reliable": "Built for long-term use." },
 			{ "Hygienic Operation": "Reduces contamination risk." },
 		],
-		link: "/products/wet-grinding-machine",
 	},
 	{
 		id: "food-and-catering-services",
@@ -611,7 +593,6 @@ export const eachProductContent: Array<{
 					"Customizable according to budget and needs.",
 			},
 		],
-		link: "/products/food-and-catering-services",
 	},
 	{
 		id: "gas-range",
@@ -632,7 +613,6 @@ export const eachProductContent: Array<{
 			{ "Safety Assurance": "Minimized risk of accidents." },
 			{ "Cost-Effective Operation": "Efficient fuel usage." },
 		],
-		link: "/products/gas-range",
 	},
 	{
 		id: "glass-door-visi-cooler",
@@ -656,7 +636,6 @@ export const eachProductContent: Array<{
 			{ "Energy Savings": "Reduces electricity costs." },
 			{ "User Convenience": "Easy access for customers and staff." },
 		],
-		link: "/products/glass-door-visi-cooler",
 	},
 	{
 		id: "hard-top-freezer",
@@ -689,7 +668,6 @@ export const eachProductContent: Array<{
 			{ "Cost-Effective": "Reduces energy expenses." },
 			{ "User-Friendly Design": "Easy loading and unloading of items." },
 		],
-		link: "/products/hard-top-freezer",
 	},
 
 	{
@@ -714,7 +692,6 @@ export const eachProductContent: Array<{
 			{ "Reduced Labor": "Fully automatic process." },
 			{ "Long-Term Durability": "Built for commercial environments." },
 		],
-		link: "/products/ice-machine",
 	},
 
 	{
@@ -745,8 +722,8 @@ export const eachProductContent: Array<{
 			{ "Ease of Use": "Simple manual operation." },
 			{ "Hygienic Process": "Reduces contamination risk." },
 		],
-		link: "/products/manual-paneer-press-machine",
 	},
+
 	{
 		id: "minibar",
 		categories: ["Refrigerators"],
@@ -766,7 +743,6 @@ export const eachProductContent: Array<{
 			{ "Space Saving": "Compact unit suitable for limited space." },
 			{ "Cost Savings": "Energy-efficient operation." },
 		],
-		link: "/products/minibar",
 	},
 
 	{
@@ -797,7 +773,6 @@ export const eachProductContent: Array<{
 			{ "Low Maintenance": "Easy cleaning and minimal upkeep." },
 			{ Durability: "Designed for heavy commercial use." },
 		],
-		link: "/products/multipurpose-coffee-machine",
 	},
 
 	{
@@ -819,7 +794,6 @@ export const eachProductContent: Array<{
 			{ "Durable and Reliable": "Long-term protection." },
 			{ "Cost-Effective Solution": "Affordable weather protection." },
 		],
-		link: "/products/plain-awning",
 	},
 	{
 		id: "buffet-counter",
@@ -849,7 +823,6 @@ export const eachProductContent: Array<{
 			{ Durability: "Long-lasting for commercial environments." },
 			{ "Space Optimization": "Compact yet spacious serving area." },
 		],
-		link: "/products/buffet-counter",
 	},
 
 	{
@@ -880,29 +853,6 @@ export const eachProductContent: Array<{
 			{ "Reliable Performance": "Consistent cooling under heavy use." },
 			{ "Ease of Operation": "Simple controls for efficient use." },
 		],
-		link: "/products/bulk-milk-cooling-tank",
-	},
-
-	{
-		id: "chicken-sorma-machine",
-		categories: ["Commercial Kitchen Equipment"],
-		heading: "Chicken Sorma Machine",
-		text1: "Specialized machine for evenly marinating and tenderizing chicken pieces in large quantities.",
-		text2: "Perfect for food processing units, restaurants, and catering services, ensuring uniform flavor distribution and reduced manual effort.",
-		key_features: [
-			{ "Stainless Steel Drum": "Durable and hygienic." },
-			{ "Variable Speed Control": "Adjust rotation speed as needed." },
-			{ "Large Capacity": "Handles bulk quantities effectively." },
-			{ "Easy Cleaning Design": "Prevents bacterial buildup." },
-			{ "Energy Efficient Motor": "Reduces operating costs." },
-		],
-		customer_benefits: [
-			{ "Uniform Marination": "Ensures consistent taste and texture." },
-			{ "Increased Productivity": "Processes large batches faster." },
-			{ "Hygienic Processing": "Reduces contamination risk." },
-			{ "Low Maintenance": "Reliable machine with minimal upkeep." },
-		],
-		link: "/products/chicken-sorma-machine",
 	},
 
 	{
@@ -933,7 +883,6 @@ export const eachProductContent: Array<{
 			{ "Simple Operation": "User-friendly interface for ease of use." },
 			{ "Durable Design": "Long-lasting for heavy usage." },
 		],
-		link: "/products/coffee-manchine",
 	},
 
 	{
@@ -961,7 +910,6 @@ export const eachProductContent: Array<{
 					"Built for continuous use in industrial settings.",
 			},
 		],
-		link: "/products/commercial-dough-mixer",
 	},
 
 	{
@@ -992,7 +940,6 @@ export const eachProductContent: Array<{
 			{ "Cost Savings": "Lower power bills due to efficiency." },
 			{ "Easy Operation": "Simple controls for daily use." },
 		],
-		link: "/products/commercial-ice-cream-freezer",
 	},
 
 	{
@@ -1017,7 +964,6 @@ export const eachProductContent: Array<{
 			{ "Low Operating Cost": "Efficient LPG usage." },
 			{ "Easy Maintenance": "Simple cleaning and upkeep." },
 		],
-		link: "/products/commercial-tray-single-deck-lpg-oven",
 	},
 
 	{
@@ -1042,7 +988,6 @@ export const eachProductContent: Array<{
 			{ "Easy to Operate": "Simple controls for staff." },
 			{ "Hygienic Cooking": "Non-stick prevents food residue buildup." },
 		],
-		link: "/products/dosa-maker",
 	},
 
 	{
@@ -1073,7 +1018,6 @@ export const eachProductContent: Array<{
 			{ "Reduced Labor": "Automatic controls reduce manual work." },
 			{ Durability: "Long-lasting performance in commercial setups." },
 		],
-		link: "/products/double-deck-automatic-lpg-oven",
 	},
 
 	{
@@ -1098,7 +1042,6 @@ export const eachProductContent: Array<{
 			{ "Durable and Reliable": "Built for heavy commercial use." },
 			{ "Ease of Use": "Minimal training needed for operators." },
 		],
-		link: "/products/dough-sheeter",
 	},
 	{
 		id: "commercial-bhatti",
@@ -1145,7 +1088,6 @@ export const eachProductContent: Array<{
 					"A rugged, reliable addition to any commercial kitchen.",
 			},
 		],
-		link: "/products/commercial-bhatti",
 	},
 
 	{
@@ -1188,7 +1130,6 @@ export const eachProductContent: Array<{
 				"Space-Saving": "Compact design with high storage efficiency.",
 			},
 		],
-		link: "/products/sweet-display-counter",
 	},
 
 	{
@@ -1241,7 +1182,6 @@ export const eachProductContent: Array<{
 					"Sleek design adds value to customer-facing areas.",
 			},
 		],
-		link: "/products/pizza-making-counter",
 	},
 
 	{
@@ -1285,6 +1225,5 @@ export const eachProductContent: Array<{
 				"Sanitary Use": "Helps meet food safety and hygiene standards.",
 			},
 		],
-		link: "/products/commercial-kitchen-sink",
 	},
 ];
