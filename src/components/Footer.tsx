@@ -76,7 +76,7 @@ export function FooterComponent() {
 					</div>
 				</div>
 				<FooterDivider />
-				<div className="w-full sm:flex sm:items-center sm:justify-between">
+				<div className="w-full text-center  sm:flex sm:items-center sm:justify-between">
 
 					<div className="flex flex-col sm:items-center">
 						<FooterCopyright
@@ -97,7 +97,7 @@ export function FooterComponent() {
 						</div>
 					</div>
 
-					<div className="mt-4 flex space-x-6 sm:mt-0 sm:justify-center">
+					<div className="mx-auto sm:mx-10 md:mx-12 w-fit mt-4 flex space-x-6 sm:mt-0 sm:justify-center">
 						<FooterIcon
 							href="https://www.facebook.com/share/1ADTHoZd31/"
 							target="_blank"

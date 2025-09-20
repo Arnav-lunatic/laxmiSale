@@ -4,7 +4,6 @@ import { useNavigate } from "react-router-dom";
 import { ProductCard } from "./Cards/ProductCard";
 import { eachProductContent } from "./Contents/EachProductContent";
 import { PhotoProvider, PhotoView } from 'react-photo-view';
-import FloatingActionButtons from "./FloatingActionButtons";
 
 interface props {
 	id: string;
@@ -46,7 +45,6 @@ function ProductPageTemplate({
 
 	return (
 		<div className="relative p-1">
-			<FloatingActionButtons />
 			<div className="px-0 lg:px-4 mb-4">
 				<button
 					onClick={() => navigate(-1)}

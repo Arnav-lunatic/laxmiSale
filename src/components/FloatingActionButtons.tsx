@@ -19,11 +19,12 @@ function FloatingActionButtons() {
         tooltips.forEach(tooltip => {
             if (tooltip instanceof HTMLElement) tooltip.style.display = 'none';
         });
+        getEnableTooltip;
     }, 15000)
 
     disableTooltip
 
-    setTimeout(() => {
+    const getEnableTooltip = setTimeout(() => {
         const tooltips = document.querySelectorAll('.tooltip');
         tooltips.forEach(tooltip => {
             if (tooltip instanceof HTMLElement) tooltip.style.display = 'flex';
@@ -32,7 +33,7 @@ function FloatingActionButtons() {
     }, 120000);
 
     return (
-        <div className="fixed bottom-2 right-2 md:bottom-4 md:right-12 flex flex-col gap-4 z-40">
+        <div className="fixed bottom-2 right-2 md:bottom-4 md:right-4 flex flex-col gap-4 z-40">
             <div
                 onClick={() => {
                     window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -51,9 +52,9 @@ function FloatingActionButtons() {
             </div>
 
 
-            <div className="tooltip flex items-center absolute bottom-2 right-16 bg-primary px-2 py-1 rounded-lg shadow-lg text-sm whitespace-nowrap cursor-default">
+            <div className="tooltip border border-secondary flex items-center absolute bottom-2 right-16 bg-primary pr-3 pl-2 py-1 rounded-l-lg rounded-r-sm shadow-lg text-sm whitespace-nowrap cursor-default">
                 <button
-                    className="text-lg mr-2 hover:scale-120 transition cursor-pointer"
+                    className=" text-lg mr-2 hover:scale-120 transition cursor-pointer"
                     onClick={(e) => {
                         e.stopPropagation();
                         const tooltip = e.currentTarget.parentElement;
@@ -63,7 +64,7 @@ function FloatingActionButtons() {
                     <IoMdCloseCircle />
                 </button>
                 Contact us
-                <div className="absolute bottom-1/2 right-0 translate-y-1/2 translate-x-1/2 w-3 h-3 bg-primary rotate-45 border-l border-b border-primary -z-1"></div>
+                <div className="absolute bottom-1/2 right-0 translate-y-1/2 translate-x-1/2 w-4 h-4 bg-primary rotate-45 border-t border-r border-secondary"></div>
             </div>
 
         </div>

@@ -3,7 +3,6 @@ import { ProductCard } from "./Cards/ProductCard";
 import { eachProductContent } from "./Contents/EachProductContent";
 import { Dropdown, DropdownItem } from "flowbite-react";
 import { MdKeyboardArrowDown } from "react-icons/md";
-import FloatingActionButtons from "./FloatingActionButtons";
 import { useNavigate, useParams } from "react-router-dom";
 
 export const ProductPage = () => {
@@ -96,8 +95,6 @@ export const ProductPage = () => {
 					</Dropdown>
 				</div>
 			</div>
-
-			<FloatingActionButtons />
 
 			<div className="grid items-start grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
 				{eachProductContent

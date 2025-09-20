@@ -8,6 +8,110 @@ export const eachProductContent: Array<{
 	customer_benefits: { [key: string]: string }[];
 }> = [
 	{
+		id: "deep-freezer",
+		heading: "Deep Freezer",
+		categories: ["Refrigerators"],
+		text1: "A reliable freezer unit designed for storing large quantities of perishable items at consistently low temperatures.",
+		text2: "Ideal for restaurants, sweet shops, and catering businesses, this deep freezer ensures long-term preservation of ingredients and prepared food.",
+		key_features: [
+			{
+				"Stainless Steel Body":
+					"Durable and resistant to wear and tear.",
+			},
+			{ "Large Storage Capacity": "Ample space for bulk storage." },
+			{
+				"Energy Efficient":
+					"Consumes less power while maintaining cooling.",
+			},
+			{
+				"Temperature Control":
+					"Adjustable settings for different needs.",
+			},
+			{ "Heavy Duty Build": "Built to handle commercial usage." },
+		],
+		customer_benefits: [
+			{ "Cost Saving": "Preserves food longer, reducing waste." },
+			{ Convenience: "Bulk storage for smooth kitchen operations." },
+			{ Reliability: "Consistent cooling for sensitive items." },
+			{ "Ease of Use": "Simple controls for hassle-free operation." },
+		],
+	},
+	{
+		id: "premium-buffet-counter",
+		categories: ["Display Counters"],
+		heading: "Premium Buffet Counter",
+		text1: "An elegant buffet counter designed for serving food in hotels, events, and restaurants with style and convenience.",
+		text2: "Made from high-quality materials, this buffet counter is perfect for presenting hot and cold dishes while maintaining hygiene.",
+		key_features: [
+			{ "Sturdy Construction": "Built with durable stainless steel." },
+			{ "Attractive Design": "Enhances the dining experience." },
+			{
+				"Heating & Cooling Options":
+					"Keeps food fresh at the right temperature.",
+			},
+			{
+				"Customizable Sizes":
+					"Available in multiple designs and dimensions.",
+			},
+			{ "Easy Mobility": "Fitted with wheels for convenient movement." },
+		],
+		customer_benefits: [
+			{
+				"Professional Presentation":
+					"Improves the appeal of food service.",
+			},
+			{ Versatility: "Suitable for hotels, events, and catering." },
+			{ "Hygienic Service": "Maintains food safety standards." },
+			{ Durability: "Designed for long-term commercial use." },
+		],
+	},
+	{
+		id: "khoya-machine",
+		categories: ["Commercial Kitchen Equipment"],
+		heading: "Khoya Machine",
+		text1: "A machine designed to prepare khoya efficiently for sweet shops and dairy businesses.",
+		text2: "Built with heavy-duty stainless steel, this khoya machine ensures fast preparation with consistent quality.",
+		key_features: [
+			{ "High Capacity": "Handles large quantities in one go." },
+			{ "Stainless Steel Drum": "Ensures hygiene and durability." },
+			{ "Gas/Electric Options": "Available in different heating types." },
+			{ "Easy Operation": "User-friendly control system." },
+			{ "Low Maintenance": "Designed for long-lasting performance." },
+		],
+		customer_benefits: [
+			{ "Time Saving": "Prepares khoya quickly and efficiently." },
+			{ Consistency: "Delivers uniform texture and quality." },
+			{ "Cost Effective": "Reduces manual labor and wastage." },
+			{ Hygienic: "Safe for food preparation." },
+		],
+	},
+	{
+		id: "sweet-display-counter-with-glass-top",
+		categories: ["Display Counters"],
+		heading: "Sweet Display Counter with Glass Top",
+		text1: "A modern sweet display counter designed with a clear glass top for attractive food presentation.",
+		text2: "Perfect for sweet shops, bakeries, and cafes, this counter keeps sweets fresh and visually appealing.",
+		key_features: [
+			{ "Glass Top Design": "Provides clear visibility of items." },
+			{ "Refrigerated Option": "Keeps sweets fresh for longer." },
+			{
+				"Durable Build":
+					"Made with high-quality stainless steel and glass.",
+			},
+			{ "LED Lighting": "Enhances food presentation." },
+			{ "Spacious Shelves": "Ample room for a wide range of items." },
+		],
+		customer_benefits: [
+			{ "Attractive Display": "Boosts customer interest and sales." },
+			{ Freshness: "Maintains product quality for extended hours." },
+			{
+				"Easy Cleaning":
+					"Smooth surfaces and glass for hassle-free cleaning.",
+			},
+			{ "Professional Look": "Adds elegance to the shop interior." },
+		],
+	},
+	{
 		id: "stainless-steel-water-cooler",
 		categories: ["Water Coolers"],
 		heading: "Stainless Steel Water Cooler",
@@ -78,7 +182,7 @@ export const eachProductContent: Array<{
 			{ "Cost-Effective": "Reduces energy expenses." },
 			{ "User-Friendly Design": "Easy loading and unloading of items." },
 		],
-		},
+	},
 	{
 		id: "visi-cooler",
 		categories: ["Refrigerators"],
