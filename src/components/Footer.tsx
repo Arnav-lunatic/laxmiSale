@@ -38,7 +38,7 @@ export function FooterComponent() {
 							<FooterTitle title="PRODUCTS CATEGORIES" />
 							<FooterLinkGroup col>
 								{
-									["Commercial Kitchen Equipment", "Refrigerators", "Ovens", "Display Counters", "Fryers", "Water Coolers", "Other Products"].map((item, index) => (
+									["Commercial Kitchen Equipment", "Refrigerators", "Ovens", "Display Counters", "Fryers", "Water Coolers", "Food Services Equipment", "Other Products"].map((item, index) => (
 										<FooterLink key={index} href={`/products/category/${item.toLowerCase().replace(/\s+/g, "-")}`}>
 											{item}
 										</FooterLink>

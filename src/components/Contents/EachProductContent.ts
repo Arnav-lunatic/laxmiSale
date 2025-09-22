@@ -6,7 +6,88 @@ export const eachProductContent: Array<{
 	text2: string;
 	key_features: { [key: string]: string }[];
 	customer_benefits: { [key: string]: string }[];
+	number_of_other_images?: number;
 }> = [
+	{
+		id: "sweet-display-counter-with-glass-top",
+		categories: ["Display Counters"],
+		heading: "Sweet Display Counter with Glass Top",
+		text1: "A modern sweet display counter designed with a clear glass top for attractive food presentation.",
+		text2: "Perfect for sweet shops, bakeries, and cafes, this counter keeps sweets fresh and visually appealing.",
+		key_features: [
+			{ "Glass Top Design": "Provides clear visibility of items." },
+			{ "Refrigerated Option": "Keeps sweets fresh for longer." },
+			{
+				"Durable Build":
+					"Made with high-quality stainless steel and glass.",
+			},
+			{ "LED Lighting": "Enhances food presentation." },
+			{ "Spacious Shelves": "Ample room for a wide range of items." },
+		],
+		customer_benefits: [
+			{ "Attractive Display": "Boosts customer interest and sales." },
+			{ Freshness: "Maintains product quality for extended hours." },
+			{
+				"Easy Cleaning":
+					"Smooth surfaces and glass for hassle-free cleaning.",
+			},
+			{ "Professional Look": "Adds elegance to the shop interior." },
+		],
+		number_of_other_images: 2,
+	},
+	{
+		id: "ice-cream-freezer",
+		categories: ["Freezers"],
+		heading: "Commercial Ice Cream Freezer",
+		text1: "Specially designed freezer for storing and displaying ice creams in retail and food service environments.",
+		text2: "Features transparent sliding lids and strong cooling capabilities, perfect for maximizing product visibility and maintaining product quality.",
+		key_features: [
+			{
+				"Transparent Sliding Lids":
+					"Easy product access and visibility.",
+			},
+			{
+				"Efficient Cooling System":
+					"Maintains stable freezing temperatures.",
+			},
+			{ "Stainless Steel Body": "Resistant to rust and easy to clean." },
+			{ "Energy Efficient": "Optimized for low power consumption." },
+			{ "Spacious Storage": "Holds large ice cream quantities." },
+		],
+		customer_benefits: [
+			{
+				"Enhanced Product Display":
+					"Attracts customers with clear visibility.",
+			},
+			{ "Maintains Product Quality": "Prevents melting and spoilage." },
+			{ "Cost Savings": "Lower power bills due to efficiency." },
+			{ "Easy Operation": "Simple controls for daily use." },
+		],
+		number_of_other_images: 1,
+	},
+	{
+		id: "glass-door-visi-cooler",
+		categories: ["Refrigerators"],
+		heading: "Glass Door Visi Cooler",
+		text1: "Refrigeration unit with glass doors designed to display beverages and perishable items clearly while maintaining optimal temperature.",
+		text2: "Perfect for convenience stores, cafes, and restaurants, it enhances product visibility and accessibility.",
+		key_features: [
+			{ "Glass Doors": "Clear visibility of stored items." },
+			{ "Efficient Cooling System": "Stable temperature control." },
+			{ "Stainless Steel Interior": "Hygienic and easy to clean." },
+			{ "Energy Efficient": "Optimized compressor for low power use." },
+			{ "LED Lighting": "Bright illumination for product display." },
+		],
+		customer_benefits: [
+			{
+				"Enhanced Product Display":
+					"Boosts sales with attractive visibility.",
+			},
+			{ "Long-Term Preservation": "Keeps products fresh longer." },
+			{ "Energy Savings": "Reduces electricity costs." },
+			{ "User Convenience": "Easy access for customers and staff." },
+		],
+	},
 	{
 		id: "deep-freezer",
 		heading: "Deep Freezer",
@@ -38,7 +119,7 @@ export const eachProductContent: Array<{
 	},
 	{
 		id: "premium-buffet-counter",
-		categories: ["Display Counters"],
+		categories: ["Display Counters", "Food Services Equipment"],
 		heading: "Premium Buffet Counter",
 		text1: "An elegant buffet counter designed for serving food in hotels, events, and restaurants with style and convenience.",
 		text2: "Made from high-quality materials, this buffet counter is perfect for presenting hot and cold dishes while maintaining hygiene.",
@@ -86,32 +167,6 @@ export const eachProductContent: Array<{
 		],
 	},
 	{
-		id: "sweet-display-counter-with-glass-top",
-		categories: ["Display Counters"],
-		heading: "Sweet Display Counter with Glass Top",
-		text1: "A modern sweet display counter designed with a clear glass top for attractive food presentation.",
-		text2: "Perfect for sweet shops, bakeries, and cafes, this counter keeps sweets fresh and visually appealing.",
-		key_features: [
-			{ "Glass Top Design": "Provides clear visibility of items." },
-			{ "Refrigerated Option": "Keeps sweets fresh for longer." },
-			{
-				"Durable Build":
-					"Made with high-quality stainless steel and glass.",
-			},
-			{ "LED Lighting": "Enhances food presentation." },
-			{ "Spacious Shelves": "Ample room for a wide range of items." },
-		],
-		customer_benefits: [
-			{ "Attractive Display": "Boosts customer interest and sales." },
-			{ Freshness: "Maintains product quality for extended hours." },
-			{
-				"Easy Cleaning":
-					"Smooth surfaces and glass for hassle-free cleaning.",
-			},
-			{ "Professional Look": "Adds elegance to the shop interior." },
-		],
-	},
-	{
 		id: "stainless-steel-water-cooler",
 		categories: ["Water Coolers"],
 		heading: "Stainless Steel Water Cooler",
@@ -129,58 +184,6 @@ export const eachProductContent: Array<{
 			{ "Hygienic Design": "Prevents bacterial growth." },
 			{ Durability: "Long-lasting performance." },
 			{ "Cost-Efficient Operation": "Saves energy." },
-		],
-	},
-	{
-		id: "display-counter",
-		categories: ["Display Counters"],
-		heading: "Display Counter",
-		text1: "Attractive display counter designed to showcase sweets and desserts in shops and bakeries.",
-		text2: "Features glass panels and built-in refrigeration to maintain freshness and enhance product visibility.",
-		key_features: [
-			{ "Glass Display Panels": "Clear visibility of sweets." },
-			{ "Refrigerated Storage": "Keeps items fresh." },
-			{ "Stainless Steel Construction": "Durable and easy to clean." },
-			{ "Adjustable Shelving": "Customizable display space." },
-			{ "Energy Efficient": "Low power consumption." },
-		],
-		customer_benefits: [
-			{ "Enhanced Visual Appeal": "Attracts customers." },
-			{ "Fresh Product Presentation": "Maintains quality of sweets." },
-			{ "Durable Build": "Long-lasting for commercial use." },
-			{ "Ease of Use": "Simple display and restocking." },
-		],
-	},
-	{
-		id: "hard-top-freezer",
-		categories: ["Freezers"],
-		heading: "Deep Freezer",
-		text1: "Commercial freezer designed with a solid top lid for bulk freezing and storage of food products.",
-		text2: "Ideal for ice cream parlors, supermarkets, and commercial kitchens needing reliable cold storage solutions.",
-		key_features: [
-			{ "Robust Lid": "Secure storage with easy access." },
-			{
-				"Efficient Cooling System":
-					"Maintains consistent low temperatures.",
-			},
-			{ "Stainless Steel Interior": "Durable and hygienic." },
-			{
-				"Energy Efficient Compressor":
-					"Optimized for lower power consumption.",
-			},
-			{
-				"Large Storage Capacity":
-					"Stores significant quantities of frozen goods.",
-			},
-		],
-		customer_benefits: [
-			{
-				"Reliable Preservation":
-					"Maintains product quality for longer periods.",
-			},
-			{ "Low Maintenance": "Simple cleaning and upkeep." },
-			{ "Cost-Effective": "Reduces energy expenses." },
-			{ "User-Friendly Design": "Easy loading and unloading of items." },
 		],
 	},
 	{
@@ -225,6 +228,124 @@ export const eachProductContent: Array<{
 		],
 	},
 	{
+		id: "conveyor-pizza",
+		heading: "Conveyor Pizza Oven",
+		text1: "A high-capacity pizza oven designed with a conveyor system for fast and consistent baking.",
+		text2: "Perfect for pizzerias, restaurants, and food courts, this oven ensures uniform cooking of pizzas and other baked items.",
+		key_features: [
+			{ "Conveyor System": "Automated cooking with consistent results." },
+			{ "Stainless Steel Build": "Durable and easy to maintain." },
+			{
+				"Adjustable Speed & Heat":
+					"Control conveyor speed and temperature.",
+			},
+			{ "Even Heat Distribution": "Ensures perfect crust and toppings." },
+			{
+				"Energy Efficient":
+					"Optimized design reduces power consumption.",
+			},
+		],
+		customer_benefits: [
+			{ "Time Saving": "Delivers pizzas quickly during rush hours." },
+			{ Consistency: "Same taste and texture every time." },
+			{ "Easy Operation": "Minimal training required for staff." },
+			{ "High Output": "Ideal for high-demand businesses." },
+		],
+	},
+	{
+		id: "gas-batti-four-burner",
+		heading: "Gas Batti Four Burner",
+		text1: "A heavy-duty four-burner gas range designed for professional kitchens and catering services.",
+		text2: "Built for efficiency and durability, this unit allows chefs to cook multiple dishes at the same time.",
+		key_features: [
+			{
+				"Four High-Performance Burners":
+					"Supports large-scale cooking.",
+			},
+			{ "Stainless Steel Body": "Rust-resistant and long-lasting." },
+			{ "Ergonomic Knobs": "Smooth and precise flame control." },
+			{ "Removable Trays": "Easy cleaning and maintenance." },
+			{ "Stable Design": "Built to handle heavy utensils." },
+		],
+		customer_benefits: [
+			{ Efficiency: "Cook multiple items at once." },
+			{ Durability: "Made to withstand daily commercial use." },
+			{ "Easy Maintenance": "Quick cleaning for busy kitchens." },
+			{ "Cost Effective": "Reduces cooking time and fuel usage." },
+		],
+	},
+	{
+		id: "three-door-glass-visi-cooler",
+		heading: "Three Door Glass Visi Cooler",
+		text1: "A spacious cooler with three glass doors for displaying and storing beverages and food items.",
+		text2: "Ideal for supermarkets, restaurants, and cafes, this visi cooler combines storage capacity with clear visibility.",
+		key_features: [
+			{ "Triple Glass Doors": "Easy access and visibility." },
+			{ "LED Lighting": "Bright and energy-saving illumination." },
+			{ "Large Capacity": "Ample space for storage." },
+			{ "Adjustable Shelves": "Customizable storage layout." },
+			{ "Temperature Control": "Keeps items fresh consistently." },
+		],
+		customer_benefits: [
+			{ "Attractive Display": "Boosts customer attention and sales." },
+			{ Convenience: "Organized and accessible storage." },
+			{ Freshness: "Keeps beverages and food at ideal temperature." },
+			{ Durability: "Built for continuous commercial use." },
+		],
+	},
+	{
+		id: "triple-deck-oven",
+		heading: "Triple Deck Oven",
+		text1: "A commercial oven with three decks designed for baking bread, cakes, pizzas, and other items in bulk.",
+		text2: "Best suited for bakeries, restaurants, and hotels, this oven provides high-capacity baking with precise heat control.",
+		key_features: [
+			{ "Three Decks": "Cook multiple items simultaneously." },
+			{ "Stainless Steel Construction": "Durable and easy to clean." },
+			{ "Even Heating": "Consistent baking across all decks." },
+			{ "Digital/Manual Controls": "Choose according to kitchen needs." },
+			{ "Energy Efficient": "Optimized to reduce power consumption." },
+		],
+		customer_benefits: [
+			{ "High Output": "Supports bulk production effortlessly." },
+			{ Versatility: "Bakes a wide range of products." },
+			{ Consistency: "Delivers uniform results every batch." },
+			{ "Ease of Use": "Simple operation for kitchen staff." },
+		],
+	},
+
+	{
+		id: "hard-top-freezer",
+		categories: ["Freezers"],
+		heading: "Deep Freezer",
+		text1: "Commercial freezer designed with a solid top lid for bulk freezing and storage of food products.",
+		text2: "Ideal for ice cream parlors, supermarkets, and commercial kitchens needing reliable cold storage solutions.",
+		key_features: [
+			{ "Robust Lid": "Secure storage with easy access." },
+			{
+				"Efficient Cooling System":
+					"Maintains consistent low temperatures.",
+			},
+			{ "Stainless Steel Interior": "Durable and hygienic." },
+			{
+				"Energy Efficient Compressor":
+					"Optimized for lower power consumption.",
+			},
+			{
+				"Large Storage Capacity":
+					"Stores significant quantities of frozen goods.",
+			},
+		],
+		customer_benefits: [
+			{
+				"Reliable Preservation":
+					"Maintains product quality for longer periods.",
+			},
+			{ "Low Maintenance": "Simple cleaning and upkeep." },
+			{ "Cost-Effective": "Reduces energy expenses." },
+			{ "User-Friendly Design": "Easy loading and unloading of items." },
+		],
+	},
+	{
 		id: "pizza-oven",
 		categories: ["Commercial Kitchen Equipment", "Ovens"],
 		heading: "Pizza Oven",
@@ -266,6 +387,29 @@ export const eachProductContent: Array<{
 				"Reliable Investment":
 					"Supports long-term operations in food businesses.",
 			},
+		],
+	},
+	{
+		id: "bread-toaster",
+		categories: ["Commercial Kitchen Equipment"],
+		heading: "Bread Toaster",
+		text1: "A compact and efficient toaster designed for quick bread toasting in commercial and household kitchens.",
+		text2: "Ideal for restaurants, cafes, and hotels, this bread toaster ensures evenly toasted slices with consistent performance.",
+		key_features: [
+			{ "Stainless Steel Body": "Durable and resistant to daily wear." },
+			{ "Multiple Slots": "Toasts several slices at once." },
+			{
+				"Adjustable Browning Control":
+					"Customizes crispness and texture.",
+			},
+			{ "Quick Heating": "Fast operation for busy kitchens." },
+			{ "Easy Cleaning Tray": "Removable crumb tray for hygiene." },
+		],
+		customer_benefits: [
+			{ "Time Efficient": "Prepares toast quickly during peak hours." },
+			{ Consistency: "Delivers uniform toasting every time." },
+			{ "User Friendly": "Simple controls for hassle-free use." },
+			{ Versatile: "Suitable for bread, buns, and sandwiches." },
 		],
 	},
 	{
@@ -691,8 +835,8 @@ export const eachProductContent: Array<{
 	},
 	{
 		id: "food-and-catering-services",
-		categories: ["Food Services"],
-		heading: "Food And Catering Services",
+		categories: ["Food Services Equipment"],
+		heading: "Food and Catering Counters",
 		text1: "Comprehensive food and catering services tailored for events, corporate functions, and large gatherings.",
 		text2: "We specialize in delivering high-quality meals with professional service, ensuring hygiene and customer satisfaction for weddings, parties, and corporate events.",
 		key_features: [
@@ -733,8 +877,8 @@ export const eachProductContent: Array<{
 	{
 		id: "gas-range",
 		categories: ["Commercial Kitchen Equipment"],
-		heading: "Gas Range",
-		text1: "Robust gas range designed for high-efficiency cooking in commercial kitchens.",
+		heading: "Gas Bhatti",
+		text1: "Robust gas bhatti designed for high-efficiency cooking in commercial kitchens.",
 		text2: "Equipped with multiple burners, durable construction, and safety features, ideal for restaurants, hotels, and catering services.",
 		key_features: [
 			{ "Multiple Burners": "Simultaneous cooking of multiple dishes." },
@@ -748,29 +892,6 @@ export const eachProductContent: Array<{
 			{ Durability: "Built to withstand commercial use." },
 			{ "Safety Assurance": "Minimized risk of accidents." },
 			{ "Cost-Effective Operation": "Efficient fuel usage." },
-		],
-	},
-	{
-		id: "glass-door-visi-cooler",
-		categories: ["Refrigerators"],
-		heading: "Glass Door Visi Cooler",
-		text1: "Refrigeration unit with glass doors designed to display beverages and perishable items clearly while maintaining optimal temperature.",
-		text2: "Perfect for convenience stores, cafes, and restaurants, it enhances product visibility and accessibility.",
-		key_features: [
-			{ "Glass Doors": "Clear visibility of stored items." },
-			{ "Efficient Cooling System": "Stable temperature control." },
-			{ "Stainless Steel Interior": "Hygienic and easy to clean." },
-			{ "Energy Efficient": "Optimized compressor for low power use." },
-			{ "LED Lighting": "Bright illumination for product display." },
-		],
-		customer_benefits: [
-			{
-				"Enhanced Product Display":
-					"Boosts sales with attractive visibility.",
-			},
-			{ "Long-Term Preservation": "Keeps products fresh longer." },
-			{ "Energy Savings": "Reduces electricity costs." },
-			{ "User Convenience": "Easy access for customers and staff." },
 		],
 	},
 	{
@@ -881,7 +1002,7 @@ export const eachProductContent: Array<{
 	{
 		id: "plain-awning",
 		categories: ["Other Products"],
-		heading: "Plain Awning",
+		heading: "Window Canopy",
 		text1: "Simple and durable awning designed for commercial spaces, providing shade and protection from weather elements.",
 		text2: "Made with high-quality materials, suitable for shop fronts, cafes, and outdoor service areas.",
 		key_features: [
@@ -898,36 +1019,6 @@ export const eachProductContent: Array<{
 			{ "Cost-Effective Solution": "Affordable weather protection." },
 		],
 	},
-	{
-		id: "buffet-counter",
-		categories: ["Display Counters"],
-		heading: "Buffet Counter",
-		text1: "A well-designed buffet counter ideal for displaying and serving food in commercial settings.",
-		text2: "Constructed with durable materials, it ensures efficient food service while maintaining hygiene in restaurants, catering services, and banquet halls.",
-		key_features: [
-			{
-				"Stainless Steel Construction":
-					"Durable and easy to clean for daily use.",
-			},
-			{
-				"Adjustable Shelves":
-					"Customizable space for various serving needs.",
-			},
-			{ "Built-in Heating Options": "Keeps food warm during service." },
-			{ "Glass Display": "Clear visibility of food items." },
-			{ "Easy Mobility": "Optional caster wheels for portability." },
-		],
-		customer_benefits: [
-			{
-				"Efficient Food Display":
-					"Enhances presentation and access to food items.",
-			},
-			{ "Hygienic Design": "Prevents contamination during service." },
-			{ Durability: "Long-lasting for commercial environments." },
-			{ "Space Optimization": "Compact yet spacious serving area." },
-		],
-	},
-
 	{
 		id: "bulk-milk-cooling-tank",
 		categories: ["Dairy Equipment"],
@@ -991,7 +1082,7 @@ export const eachProductContent: Array<{
 	{
 		id: "commercial-dough-mixer",
 		categories: ["Commercial Kitchen Equipment"],
-		heading: "Commercial Dough Mixer",
+		heading: "Spiral Mixer",
 		text1: "Powerful mixer designed for kneading large quantities of dough in bakeries and food processing units.",
 		text2: "Equipped with variable speed and robust build, it ensures thorough mixing of ingredients for consistent dough quality.",
 		key_features: [
@@ -1014,61 +1105,6 @@ export const eachProductContent: Array<{
 			},
 		],
 	},
-
-	{
-		id: "commercial-ice-cream-freezer",
-		categories: ["Freezers"],
-		heading: "Commercial Ice Cream Freezer",
-		text1: "Specially designed freezer for storing and displaying ice creams in retail and food service environments.",
-		text2: "Features transparent sliding lids and strong cooling capabilities, perfect for maximizing product visibility and maintaining product quality.",
-		key_features: [
-			{
-				"Transparent Sliding Lids":
-					"Easy product access and visibility.",
-			},
-			{
-				"Efficient Cooling System":
-					"Maintains stable freezing temperatures.",
-			},
-			{ "Stainless Steel Body": "Resistant to rust and easy to clean." },
-			{ "Energy Efficient": "Optimized for low power consumption." },
-			{ "Spacious Storage": "Holds large ice cream quantities." },
-		],
-		customer_benefits: [
-			{
-				"Enhanced Product Display":
-					"Attracts customers with clear visibility.",
-			},
-			{ "Maintains Product Quality": "Prevents melting and spoilage." },
-			{ "Cost Savings": "Lower power bills due to efficiency." },
-			{ "Easy Operation": "Simple controls for daily use." },
-		],
-	},
-
-	{
-		id: "commercial-tray-single-deck-lpg-oven",
-		categories: ["Commercial Kitchen Equipment", "Ovens"],
-		heading: "Commercial Tray Single Deck LPG Oven",
-		text1: "Compact LPG-powered oven designed for baking and roasting in small to medium-sized commercial kitchens.",
-		text2: "Equipped with uniform heat distribution and easy controls, it is perfect for bakeries, hotels, and restaurants.",
-		key_features: [
-			{ "Stainless Steel Body": "Durable and hygienic." },
-			{ "Uniform Heat Distribution": "Ensures even baking." },
-			{ "Adjustable Temperature Control": "Precise baking settings." },
-			{ "Single Tray Capacity": "Suitable for small-scale production." },
-			{ "Energy Efficient LPG Use": "Cost-effective heating solution." },
-		],
-		customer_benefits: [
-			{
-				"Reliable Baking Quality":
-					"Consistent results for pastries, bread, etc.",
-			},
-			{ "Compact Design": "Saves kitchen space." },
-			{ "Low Operating Cost": "Efficient LPG usage." },
-			{ "Easy Maintenance": "Simple cleaning and upkeep." },
-		],
-	},
-
 	{
 		id: "dosa-maker",
 		categories: ["Commercial Kitchen Equipment"],
@@ -1126,7 +1162,7 @@ export const eachProductContent: Array<{
 	{
 		id: "dough-sheeter",
 		categories: ["Commercial Kitchen Equipment"],
-		heading: "Dough Sheeter",
+		heading: "Roti Maker",
 		text1: "Industrial machine designed to roll and flatten dough to uniform thickness for bakery and food production purposes.",
 		text2: "Ideal for large bakeries and pastry production, ensuring efficiency and consistency in dough preparation.",
 		key_features: [
@@ -1192,7 +1228,6 @@ export const eachProductContent: Array<{
 			},
 		],
 	},
-
 	{
 		id: "sweet-display-counter",
 		categories: ["Display Counters"],
@@ -1233,6 +1268,7 @@ export const eachProductContent: Array<{
 				"Space-Saving": "Compact design with high storage efficiency.",
 			},
 		],
+		number_of_other_images: 1,
 	},
 
 	{

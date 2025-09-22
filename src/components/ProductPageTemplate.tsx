@@ -12,6 +12,7 @@ interface props {
 	text2?: string;
 	key_features?: { [key: string]: string }[];
 	customer_benefits?: { [key: string]: string }[];
+	number_of_other_images?: number;
 }
 
 function ProductPageTemplate({
@@ -21,6 +22,7 @@ function ProductPageTemplate({
 	text2,
 	key_features,
 	customer_benefits,
+	number_of_other_images
 }: props) {
 	const navigate = useNavigate();
 
@@ -55,11 +57,11 @@ function ProductPageTemplate({
 				</button>
 			</div>
 
-			<div className="relative flex flex-col lg:flex-row items-center mb-20 w-full xl:w-[90%] mx-auto">
+			<div className="relative flex flex-col lg:flex-row items-center w-full xl:w-[90%] mx-auto">
 				<div className="relative w-3/4 md:w-1/2 cursor-pointer">
 					<PhotoProvider>
 						<PhotoView src={`https://res.cloudinary.com/laxmisales/image/upload/${id}.png`}>
-							<img className="w-full aspect-square object-cover rounded-lg" src={`https://res.cloudinary.com/laxmisales/image/upload/${id}.png`} alt="..." />
+							<img className="w-full aspect-square object-cover rounded-lg" src={`https://res.cloudinary.com/laxmisales/image/upload/${id}`} alt="..." />
 						</PhotoView>
 					</PhotoProvider>
 
@@ -113,6 +115,21 @@ function ProductPageTemplate({
 					</div>
 				</div>
 				<div className="bg-secondary/50 absolute lg:top-0 bottom-0 right-0 h-13/14 sm:h-7/8 md:h-4/5 lg:h-full w-full lg:w-5/6 -z-1 rounded-lg"></div>
+			</div>
+
+			<div className="w-full max-w-[1300px] m-auto py-8 p-4">
+				<h2 className="text-2xl font-bold mb-4 text-text text-center">View Other Images</h2>
+				{number_of_other_images && number_of_other_images > 0 && (
+					<PhotoProvider>
+						<div className="w-full max-w-[1300px] m-auto border-secondary flex justify-center-safe gap-4 overflow-x-auto">
+							{Array.from({ length: number_of_other_images }, (_, index) => (
+								<PhotoView key={index} src={`https://res.cloudinary.com/laxmisales/image/upload/${id}-${index + 1}`}>
+									<img className="cursor-pointer w-52 aspect-square object-cover rounded-lg" src={`https://res.cloudinary.com/laxmisales/image/upload/q_20/${id}-${index + 1}`} alt="" />
+								</PhotoView>
+							))}
+						</div>
+					</PhotoProvider>
+				)}
 			</div>
 
 			<div className="w-full max-w-[1300px] m-auto py-8 p-4 border-t border-secondary">

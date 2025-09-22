@@ -4,6 +4,7 @@ import { eachProductContent } from "./Contents/EachProductContent";
 import { Dropdown, DropdownItem } from "flowbite-react";
 import { MdKeyboardArrowDown } from "react-icons/md";
 import { useNavigate, useParams } from "react-router-dom";
+import { IoIosCloseCircleOutline } from "react-icons/io";
 
 export const ProductPage = () => {
 	const navigate = useNavigate();
@@ -17,6 +18,7 @@ export const ProductPage = () => {
 		"Display Counters",
 		"Fryers",
 		"Water Coolers",
+		"Food Services Equipment",
 		"Other Products"
 	];
 
@@ -33,8 +35,20 @@ export const ProductPage = () => {
 	);
 
 	const categoryButton = (
-		<span className="text-text flex items-center cursor-pointer border-2 border-secondary px-2 py-1 rounded-lg">
-			<p className="font-semibold">{selectedCategory}</p>
+		<span className="text-text flex items-center cursor-pointer border-2 border-secondary px-2 py-1 rounded-lg hover:border-primary hover:text-primary">
+			<p className="font-semibold flex items-center gap-2">
+				{selectedCategory === "Categories" ? null :
+					<div
+						className="text-xl hover:text-text hover:scale-130 transition"
+						onClick={(e) => {
+							e.stopPropagation();
+							handleCategorySelect("All");
+						}}>
+						<IoIosCloseCircleOutline />
+					</div>
+				}
+				{selectedCategory}
+			</p>
 			<MdKeyboardArrowDown className="text-2xl" />
 		</span>
 	);
@@ -63,7 +77,7 @@ export const ProductPage = () => {
 						value={searchTerm}
 						onChange={handleSearchChange}
 						placeholder="Search products..."
-						className="w-full px-4 py-2 text-text bg-background border-2 border-secondary rounded-lg focus:outline-none focus:border-primary"
+						className="w-full pl-2 pr-8 py-2 text-text bg-background border-2 border-secondary rounded-lg focus:outline-none focus:border-primary hover:border-primary"
 					/>
 					<svg
 						className="absolute right-3 top-1/2 transform -translate-y-1/2 text-secondary w-5 h-5"
@@ -90,7 +104,9 @@ export const ProductPage = () => {
 								onClick={() => {
 									handleCategorySelect(selectedCategory);
 								}}
-								className="text-text bg-background hover:bg-secondary focus:bg-secondary focus:text-primary font-semibold text-md" key={index}>{selectedCategory}</DropdownItem>
+								className="text-text bg-background hover:bg-secondary focus:bg-secondary focus:text-primary font-semibold text-md" key={index}>
+								{selectedCategory}
+							</DropdownItem>
 						))}
 					</Dropdown>
 				</div>

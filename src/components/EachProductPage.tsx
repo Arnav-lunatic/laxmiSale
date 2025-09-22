@@ -16,6 +16,7 @@ export default function EachProductPage() {
                 text2={product.text2}
                 key_features={product.key_features}
                 customer_benefits={product.customer_benefits}
+                number_of_other_images={product.number_of_other_images}
             />
         )
     );

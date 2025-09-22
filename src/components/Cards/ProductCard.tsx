@@ -16,7 +16,7 @@ export const ProductCard = ({ id, heading, text }: props) => {
 				navigate(`/products/${id}`);
 			}}
 			className="w-full bg-secondary border-secondary cursor-pointer hover:scale-104 transition"
-			renderImage={() => <img className="rounded-t-lg h-96 w-full object-cover" src={`https://res.cloudinary.com/laxmisales/image/upload/${id}.png`} alt={heading} />}
+			renderImage={() => <img className="rounded-t-lg h-96 w-full object-cover" src={`https://res.cloudinary.com/laxmisales/image/upload/q_70/${id}.jpeg`} alt={heading} />}
 		>
 			<div className="flex flex-col h-40">
 				<h5 className="text-2xl font-bold tracking-tight text-accent">
